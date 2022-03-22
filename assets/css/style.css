@@ -21,6 +21,12 @@ h1, ul{
 
 h1{
     font-size: 50px;
+    color: rgb(212, 81, 20);
+}
+
+h2{
+    font-size: 35px;
+    color: #ad4829;
 }
 
 p{
@@ -30,12 +36,21 @@ p{
     margin-right: auto;
 }
 
+a{
+    text-decoration: none;
+    color: var(--foreground-color);
+}
+
 hr{
     border: none;
     height: 1px;
-    background-color: var(--foreground-color);
+    background-color: rgb(212, 81, 20);
     width: 80%;
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
+}
+
+hr.short{
+    width: 40%;
 }
 
 .highlight_red{
@@ -52,7 +67,7 @@ hr{
 header{
     min-height: 100vh;
     margin-bottom: 10%;
-    border-bottom: 2px solid #fc3903;
+    border-bottom: 2px solid #ff3700;
     background: linear-gradient(30deg, rgba(252, 37, 37, 0.6), rgba(236, 181, 0, 0.6));
 }
 
@@ -70,11 +85,13 @@ header .bgCode{
     font-weight: 700;
     text-align: center;
     padding-top: 15%;
+    color: var(--foreground-color);
 }
 
 .subtitle{
     font-size: 2em;
     font-weight: 500;
+    color: var(--foreground-color);
     filter: brightness(90%);
 }
 
@@ -121,7 +138,110 @@ header .bgCode{
     p{
         max-width: 90%;
     }
+
+    .aboutMeTable td{
+        font-size: 50px;
+    }
+
 }
 .nav li a:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+}
+
+
+/*  About Me */
+.aboutMeTable{
+    /* width: 25%; */
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;  
+}
+
+.aboutMeTable td{
+    font-size: 20px;
+    vertical-align: top;
+    padding: 5px 10px;
+}
+
+.aboutMeTable td:first-child{
+    filter: brightness(80%);
+}
+
+.skills{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* border-left: rgba(252, 37, 37, 0.6) solid 10px; */
+    border-radius: 2px;
+}
+
+.skill {
+    background: linear-gradient(90deg, rgba(252, 37, 37, 0.6) 0%, rgba(236, 181, 0, 0.6) 100%);
+    text-align: right;
+    padding: 0px 10px;
+    line-height: 30px;
+    border-radius: 5px 20px 20px 5px;
+    height: 28px;
+    width: var(--skill-percentage);
+    margin-bottom: 10px;
+}
+
+
+/* My Projects */
+
+.projects{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project{
+    text-align: left;
+    background-color: #222;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 150px;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    transition: all ease-in-out .2s;
+}
+
+.project:hover{
+    box-shadow: rgba(255, 134, 54, 0.671) 0px 0px 18px;
+}
+
+.project p{
+    max-width: none;
+}
+
+.project .name{
+    margin: 0;
+    color: #ff6a00;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.project .technology{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project .githubref{
+    font-size: 20px;
+    background-color: #913519;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+    transition: all ease-in-out .2s;
+}
+
+
+.project .githubref:hover{
+    border-radius: 10px;
 }

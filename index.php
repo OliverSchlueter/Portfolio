@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/timeline.css">
     <title>Oliver Schlüter</title>
 </head>
 <body>
@@ -20,37 +20,91 @@
         </header>
         
         <h1 id="aboutMe">Über mich</h1>
-        <p>Hallo, ich bin Oliver Schlüter. Ich bin 19 Jahre alt und absolviere zurzeit meine Fachhochschulreife mit den <span class="highlight_aqua">informationstechnischen Assistenten</span>. Schon früh entdeckte ich die Welt der Programmiersprachen und entwickelte viele Minecraft/Spigot Plugins mit <span class="highlight_red">Java</span>. Auch lernte ich <span class="highlight_red">HTML & CSS</span> und experimentierte damit viel rum. Um mehr Leben in meinen Web-Projekte zu bekommen, lernte ich auch noch <span class="highlight_red">PHP</span>. Um Daten von meinen Spigot Plugins nicht immer in Textdatein speichern zu müssen, beschäftigte ich mich mit <span class="highlight_red">MySQL und SQLite</span>. Um ehrlich zu sein waren diese Datenbanken nicht gut struktuiert und bestanden oft nur aus einer Tabelle, dies sollte sich bei meinen Praktikum bei d.velop ändern. Dort lernte ich mehr über Beziehungen und wie man das alles plant. <br><br>Nach der Realschule entschied ich mich ein Fachabitur mit den Informationstechnischen Assistenten zu machen (was genau die richtige Entscheidung war). Da ich schon einiges an Vorwissen hatte, fielen mir die ersten Klausuren in den Software/Datenbanken Fächern leicht. Jedoch lernte ich dort noch viel mehr über die generelle Planung von Software/Datenbanken. Auch benutzen wir die Programmiersprache <span class="highlight_red">C#</span>, welche ähnlich zu Java ist. In der Mittelstufe erhielt ich die Möglichkeit an ein <span class="highlight_aqua">Schülerstudium</span> an der FH Münster teilzunhemen. Ich nutzte die Chance und lernte dort noch mehr über die Softwareentwicklung und Java. Parallel entdeckte ich <span class="highlight_red">Git und GitHub</span>, welches sehr praktisch war, da man sein Code überall hat, die Versionierung und den Open-Source Aspekt hat.</p>
-        
+        <h2>Persönliche Daten</h2>
+        <table class="aboutMeTable">
+            <tr>
+                <td>Name</td>
+                <td>Oliver Schlüter</td>
+            </tr>
+            <tr>
+                <td>Geb.</td>
+                <td>13.03.2003</td>
+            </tr>
+            <tr>
+                <td>Alter</td>
+                <td><span id="myAge" title="Ich weiß nicht, warum ich das gemacht habe">19 Jahre</span></td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td>oliver_schlueter@hotmail.com</td>
+            </tr>
+            <tr>
+                <td>GitHub</td>
+                <td><a href="https://github.com/OliverSchlueter" target="_blank">GitHub.com/OliverSchlueter</a></td>
+            </tr>
+        </table>
+
+        <hr class="short">
+
+        <h2>Schulische Laufbahn</h2>
+
+        <div class="timeline-container">
+            <div class="point">
+                <p class="date">2021 - 2022</p>
+                <p class="txt">Schülerstudium<br>Modul: "Grundlagen der Programmierung"</p>
+            </div>
+            <div class="point">
+                <p class="date">2020 - 2023</p>
+                <p class="txt">Fachhochschulreife<br> + Informationstechnischer Assisent</p>
+            </div>
+            <div class="point">
+                <p class="date">2014 - 2020</p>
+                <p class="txt">Realschule</p>
+            </div>
+            <div class="point">
+                <p class="date">2009 - 2014</p>
+                <p class="txt">Grundschule</p>
+            </div>
+        </div>
+
+        <hr class="short">
+
+        <h2>Kenntnisse</h2>
+        <div class="skills">
+            <div class="skill" style="--skill-percentage: 80%">Java</div>
+            <div class="skill" style="--skill-percentage: 60%">C#</div>
+            <div class="skill" style="--skill-percentage: 57%">SQL (MySQL)</div>
+            <div class="skill" style="--skill-percentage: 55%">PHP</div>
+            <div class="skill" style="--skill-percentage: 50%">HTML</div>
+            <div class="skill" style="--skill-percentage: 45%">CSS</div>
+            <div class="skill" style="--skill-percentage: 38%">Git (GitHub)</div>
+            <div class="skill" style="--skill-percentage: 30%">Python</div>
+            <div class="skill" style="--skill-percentage: 26%">JavaScript</div>
+        </div>
+
+        <br>
         <hr>
+
         <h1 id="projects">Meine Projekte</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste id laborum cupiditate nulla ullam delectus corrupti optio ducimus nihil eaque, repellendus architecto dolorum, necessitatibus atque sed possimus perspiciatis ipsum distinctio.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam vitae cupiditate aliquam libero, itaque reiciendis provident ratione necessitatibus nobis porro! Aut id fuga, nihil perferendis nemo tempora omnis ducimus!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum, eaque neque illo provident quae pariatur magni doloribus! Quos non provident ratione magni minima nesciunt nobis perspiciatis voluptatibus temporibus ipsam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iusto. Minus saepe exercitationem ipsum velit repudiandae cum, optio cumque deserunt obcaecati quas, corrupti atque molestias voluptate eligendi. Quam, fugiat molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo nisi. Quam veritatis quia dolore quo. Culpa architecto adipisci a nemo exercitationem aut labore excepturi consectetur dolore odit! Totam, rem.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste id laborum cupiditate nulla ullam delectus corrupti optio ducimus nihil eaque, repellendus architecto dolorum, necessitatibus atque sed possimus perspiciatis ipsum distinctio.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam vitae cupiditate aliquam libero, itaque reiciendis provident ratione necessitatibus nobis porro! Aut id fuga, nihil perferendis nemo tempora omnis ducimus!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum, eaque neque illo provident quae pariatur magni doloribus! Quos non provident ratione magni minima nesciunt nobis perspiciatis voluptatibus temporibus ipsam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iusto. Minus saepe exercitationem ipsum velit repudiandae cum, optio cumque deserunt obcaecati quas, corrupti atque molestias voluptate eligendi. Quam, fugiat molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo nisi. Quam veritatis quia dolore quo. Culpa architecto adipisci a nemo exercitationem aut labore excepturi consectetur dolore odit! Totam, rem.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste id laborum cupiditate nulla ullam delectus corrupti optio ducimus nihil eaque, repellendus architecto dolorum, necessitatibus atque sed possimus perspiciatis ipsum distinctio.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam vitae cupiditate aliquam libero, itaque reiciendis provident ratione necessitatibus nobis porro! Aut id fuga, nihil perferendis nemo tempora omnis ducimus!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum, eaque neque illo provident quae pariatur magni doloribus! Quos non provident ratione magni minima nesciunt nobis perspiciatis voluptatibus temporibus ipsam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iusto. Minus saepe exercitationem ipsum velit repudiandae cum, optio cumque deserunt obcaecati quas, corrupti atque molestias voluptate eligendi. Quam, fugiat molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo nisi. Quam veritatis quia dolore quo. Culpa architecto adipisci a nemo exercitationem aut labore excepturi consectetur dolore odit! Totam, rem.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste id laborum cupiditate nulla ullam delectus corrupti optio ducimus nihil eaque, repellendus architecto dolorum, necessitatibus atque sed possimus perspiciatis ipsum distinctio.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam vitae cupiditate aliquam libero, itaque reiciendis provident ratione necessitatibus nobis porro! Aut id fuga, nihil perferendis nemo tempora omnis ducimus!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum, eaque neque illo provident quae pariatur magni doloribus! Quos non provident ratione magni minima nesciunt nobis perspiciatis voluptatibus temporibus ipsam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iusto. Minus saepe exercitationem ipsum velit repudiandae cum, optio cumque deserunt obcaecati quas, corrupti atque molestias voluptate eligendi. Quam, fugiat molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo nisi. Quam veritatis quia dolore quo. Culpa architecto adipisci a nemo exercitationem aut labore excepturi consectetur dolore odit! Totam, rem.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste id laborum cupiditate nulla ullam delectus corrupti optio ducimus nihil eaque, repellendus architecto dolorum, necessitatibus atque sed possimus perspiciatis ipsum distinctio.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam vitae cupiditate aliquam libero, itaque reiciendis provident ratione necessitatibus nobis porro! Aut id fuga, nihil perferendis nemo tempora omnis ducimus!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum, eaque neque illo provident quae pariatur magni doloribus! Quos non provident ratione magni minima nesciunt nobis perspiciatis voluptatibus temporibus ipsam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iusto. Minus saepe exercitationem ipsum velit repudiandae cum, optio cumque deserunt obcaecati quas, corrupti atque molestias voluptate eligendi. Quam, fugiat molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo nisi. Quam veritatis quia dolore quo. Culpa architecto adipisci a nemo exercitationem aut labore excepturi consectetur dolore odit! Totam, rem.
-        
-        </p>
+        <div class="projects">
+            <div class="project">
+                <p class="name">Portfolio<a class="githubref" href="https://github.com/OliverSchlueter/Portfolio" target="_blank">GitHub</a></p>
+                <p class="technology">PHP, JavaScript, HTML, CSS</p>
+                <p class="description">Dies ist eine Website, welche mein Portfolio sein soll. Es wurde mehr wert auf Design gelegt, als sonst.</p>
+            </div>
+            <div class="project">
+                <p class="name">Java-- (Compiler)<a class="githubref" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a></p>
+                <p class="technology">Java, Maven</p>
+                <p class="description">Java-- is a personal project. I called it Java--, because I (obviously) like Java and I also like the reason why C++ is called C++ but actually my compiler is bad so I called it Java--.</p>
+            </div>
+            <div class="project">
+                <p class="name">ThisCord<a class="githubref" href="https://github.com/OliverSchlueter/ThisCordServer" target="_blank">GitHub</a></p>
+                <p class="technology">Java, MySQL; PHP, JavaScript, HTML, CSS</p>
+                <p class="description">ThisCord ist ein standart Messenger, wo man anderen Nachrichten senden kann. Mein Lernziel, war, Websockets kennzulernen.</p>
+            </div>
+
+        </div>
     </div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
