@@ -20,7 +20,7 @@ h1, ul{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 70px;
     color: rgb(212, 81, 20);
 }
 
@@ -31,7 +31,7 @@ h2{
 
 p{
     font-size: 20px;
-    max-width: 70%;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -150,6 +150,10 @@ header .bgCode{
 
 
 /*  About Me */
+.aboutMeInfo{
+    text-align: justify;
+}
+
 .aboutMeTable{
     /* width: 25%; */
     border: none;
@@ -207,7 +211,7 @@ header .bgCode{
     min-width: 200px;
     max-width: 400px;
     min-height: 150px;
-    margin: 10px;
+    margin: 15px;
     margin-top: 50px;
     padding: 10px 20px;
     transition: all ease-in-out .2s;
@@ -243,5 +247,6 @@ header .bgCode{
 
 
 .project .githubref:hover{
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    color: rgb(255, 211, 65);
 }

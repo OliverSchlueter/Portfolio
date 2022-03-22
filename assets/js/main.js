@@ -15,9 +15,9 @@ function setMyAge() {
     var seconds = Math.abs(now.getSeconds() - bday.getSeconds());
 
     var ageStr = "";
-    ageStr += years + "Y ";
-    ageStr += (months > 0 ? months + "M " : "");
-    ageStr += (days > 0 ? days + "D " : "");
+    ageStr += years + "y ";
+    ageStr += (months > 0 ? months + "m " : "");
+    ageStr += (days > 0 ? days + "d " : "");
     ageStr += (hours > 0 ? hours + "h " : "");
     ageStr += (minutes > 0 ? minutes + "min " : "");
     ageStr += (seconds > 0 ? seconds + "sek " : "");
