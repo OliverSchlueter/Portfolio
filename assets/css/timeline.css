@@ -1,79 +1,65 @@
 .timeline-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    /* (A1) RELATIVE POSITION REQUIRED TO PROPERLY POSITION THE TIMELINE */
-    position: relative;
-   
-    /* (A2) RESERVE MORE SPACE TO THE LEFT FOR THE TIMELINE */
-    padding: 10px 10px 10px 50px;
-   
-    /* (A3) OPTIONAL WIDTH RESTRICTION */
-    max-width: max-content;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 10px 10px 10px 50px;
+  max-width: max-content;
+}
   
-  /* (B) DRAW VERTICAL LINE USING ::BEFORE */
-  .timeline-container::before {
-    /* (B1) VERTICAL LINE */
-    content: "";
-    width: 5px;
-    background: linear-gradient(30deg, rgba(252, 37, 37, 0.6), rgba(236, 181, 0, 0.6));
+  /* Vertical line */
+.timeline-container::before {
+  content: "";
+  width: 5px;
+  background: linear-gradient(30deg, rgba(252, 37, 37, 0.6), rgba(236, 181, 0, 0.6));
+  position: absolute;
+  top: 0; bottom: 0; left: 15px;
+}
 
-   
-    /* (B2) POSITION TO THE LEFT */
-    position: absolute;
-    top: 0; bottom: 0; left: 15px;
-  }
-  
-  /* (C) COSMETICS FOR EVENTS */
-  div .point {
-    padding: 5px 10px;
-    background-color: #222;
-    position: relative;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    text-align: left;
-    transition: all ease-in-out .2s;
-  }
+div .point {
+  padding: 5px 10px;
+  background-color: #222;
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: left;
+  transition: all ease-in-out .2s;
+}
 
-  div .point:hover{
-    border-radius: 15px;
-  }
-  
-  /* (D) COSMETICS FOR EVENT DATE & TEXT */
-  .point .date {
-    font-size: 1.1em;
-    font-weight: 700;
-    color: #ff6a00;
-  }
-  
-  .point .txt, .point .date {
-    margin: 10px 20px;
-    max-width: 100%;
-  }
-  
-  /* (E) EVENT "SPEECH BUBBLE CALLOUT" */
-  div .point::before {
-    /* (E1) "MAGIC TRIANGLE" */
-    content: "";
-    border: 10px solid transparent;
-    border-right-color: #222;
-    border-left: 0;
-   
-     /* (E2) POSITION TO THE LEFT */
-    position: absolute;
-    top: 20%; left: -10px;
-  }
-  
-  /* (F) CIRCLE ON TIMELINE */
+div .point:hover{
+  border-radius: 15px;
+}
+
+.point .date {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #ff6a00;
+}
+
+.point .txt, .point .date {
+  margin: 10px 20px;
+  max-width: 100%;
+}
+
+/* Triangle */
+div .point::before {
+  content: "";
+  border: 10px solid transparent;
+  border-right-color: #222;
+  border-left: 0;
+  position: absolute;
+  top: 20%; left: -10px;
+}
+
+/* Circle */
   div .point::after {
-    content: "";
-    background: rgb(212, 81, 20);
-    /* circle around the dot */
-    /* border: 4px solid rgb(252, 37, 37); */
-    width: 20px; height: 20px;
-    border-radius: 50%;
-   
-    position: absolute;
-    top: 20%; left: -42px;
-  }
+  content: "";
+  background: rgb(212, 81, 20);
+  /* circle around the dot */
+  /* border: 4px solid rgb(252, 37, 37); */
+  width: 20px; height: 20px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 20%; left: -42px;
+}
