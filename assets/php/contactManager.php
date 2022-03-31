@@ -48,7 +48,7 @@ if(isset($_POST["submit"])){
 
     echo "<script> 
             window.alert('Erfolgreich Nachricht gesendet!'); 
-            window.open('./#contact', '_self');
+            window.open('../../#contact', '_self');
             </script>";
 }
 

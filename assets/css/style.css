@@ -5,6 +5,10 @@
     --foreground-color: rgb(250, 250, 250);
 }
 
+::selection{
+    background-color: #d3ab28;
+}
+
 body{
     font-family: 'Open Sans';
     font-weight: 500;
@@ -94,6 +98,10 @@ header .bgCode{
     filter: brightness(90%);
 }
 
+.link{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
 /* Nav */

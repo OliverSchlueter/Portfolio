@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
     <title>Oliver Schlüter</title>
 </head>
 <body>
@@ -33,10 +34,10 @@
                 <td>Geb.</td>
                 <td>13.03.2003</td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td>Alter</td>
                 <td><span id="myAge" title="Ich weiß nicht, warum ich das gemacht habe">19 Jahre</span></td>
-            </tr>
+            </tr> -->
             <tr>
                 <td>E-Mail</td>
                 <td>oliver_schlueter@hotmail.com</td>
@@ -73,21 +74,27 @@
         <hr class="short">
 
         <h2>Kenntnisse</h2>
-        <p style="text-align: justify;">
-            Schon 2016 habe ich angefangen programmieren zu lernen mit <span class="highlight_red">Java</span> und habe simple Minecraft/Spigot-Plugins entwickelt.
-             Es machte mir viel Spaß und ich lernte Woche für Woche dazu. 
-             Mit den Inspektor-Tool entdeckte ich, wie Websiten aufgebaut sind und probierte damit herrum, bis ich schließlich auch selber kleine Websiten mit <span class="highlight_red">HTML und CSS</span> erstellte.
-             Schnell entdeckte ich, dass ich nicht alle Daten in Textdatein speicher kann und began mich mit <span class="highlight_red">MySQL und SQLite</span> zu beschäftigen. 
-             <br><br>
-             Als ich mehr und mehr für Websiten interresierte, entschied ich meine eigenes kleines Cloud-System zu entwickeln und entdeckte dabei <span class="highlight_red">PHP</span>. 
-             Spätestens als ich 2018 mein Praktikum bei d.velop absolviert habe, stand für mich fest, <span style="font-weight: 700;">ich will Entwickler werden</span>. 
-             <br><br>
-             Daher entscheid ich mich nach der Realschule meine Fachhochschulreife mit den Informationstechnischen Assisent zu starten. Dort lernte noch viel mehr über die Entwicklung von Software und auch über die generelle Informatik. 
-             Dazu zählt <span class="highlight_red">C# und Git(Hub)</span>, ebenfalls nahm ich am einen Schülerstudium im Modul: "Grundlagen der Programmierung" teil, wo die Programmiersprache Java zum Einsatz kam.
-             <br><br>
-             Am Balkendiagramm hier unten, kann man gut sehen, womit ich bis jetzt am meisten Erfahrung und Interesse habe.
-            </p>
-            
+        <p>Du willst wissen, wie ich mit dem Programmieren angefangen bin? <span class="link" onclick="showDialog('starting-story')">Dann klick hier!</span></p>
+        
+        <div class="dialog-container" id="starting-story">
+            <dialog open>
+                <button onclick="hideDialog('starting-story')" class="hideBtn">X</button>
+                <h2>Wie ich mit dem Programmieren angefangen bin</h2>
+                <p style="text-align: justify;">
+                    Schon 2016 habe ich angefangen programmieren zu lernen mit <span class="highlight_red">Java</span> und habe simple Minecraft/Spigot-Plugins entwickelt.
+                    Es machte mir viel Spaß und ich lernte Woche für Woche dazu. 
+                    Mit den Inspektor-Tool entdeckte ich, wie Websiten aufgebaut sind und probierte damit herrum, bis ich schließlich auch selber kleine Websiten mit <span class="highlight_red">HTML und CSS</span> erstellte.
+                    Schnell entdeckte ich, dass ich nicht alle Daten in Textdatein speicher kann und began mich mit <span class="highlight_red">MySQL und SQLite</span> zu beschäftigen. 
+                    <br><br>
+                    Als ich mehr und mehr für Websiten interresierte, entschied ich meine eigenes kleines Cloud-System zu entwickeln und entdeckte dabei <span class="highlight_red">PHP</span>. 
+                    Spätestens als ich 2018 mein Praktikum bei d.velop absolviert habe, stand für mich fest, <span style="font-weight: 700;">ich will Entwickler werden</span>! 
+                    <br><br>
+                    Daher entscheid ich mich nach der Realschule meine Fachhochschulreife mit den Informationstechnischen Assisent zu starten. Dort lernte noch viel mehr über die Entwicklung von Software und auch über die generelle Informatik. 
+                    Dazu zählt <span class="highlight_red">C# und Git(Hub)</span>, ebenfalls nahm ich am einen Schülerstudium im Modul: "Grundlagen der Programmierung" teil, wo die Programmiersprache Java zum Einsatz kam.
+                </p>
+            </dialog>
+        </div>
+        
         <div class="skills">
             <div class="skill" style="--skill-percentage: 80%">Java</div>
             <div class="skill" style="--skill-percentage: 65%">C#</div>
@@ -107,20 +114,14 @@
         <div class="projects">
             <div class="project">
                 <p class="name">Portfolio<a class="githubref" href="https://github.com/OliverSchlueter/Portfolio" target="_blank">GitHub</a></p>
-                <p class="technology">HTML, CSS, JavaScript</p>
+                <p class="technology">HTML, CSS, JavaScript, PHP</p>
                 <p class="description">Dies ist eine Website, welche mein Portfolio sein soll. Es wurde mehr wert auf Design gelegt, als sonst.</p>
             </div>
             <div class="project">
-                <p class="name">Java-- (Compiler)<a class="githubref" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a></p>
+                <p class="name">Compiler<a class="githubref" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a></p>
                 <p class="technology">Java, Maven</p>
-                <p class="description">Java-- is a personal project. I called it Java--, because I (obviously) like Java and I also like the reason why C++ is called C++ but actually my compiler is bad so I called it Java--.</p>
+                <p class="description">Das Bauen eines Compiler ("Java--") ist ein von mir privates Lernprojekt, um die Abläufe des Kompilieren zu verstehen.</p>
             </div>
-            <div class="project">
-                <p class="name">ThisCord<a class="githubref" href="https://github.com/OliverSchlueter/ThisCordServer" target="_blank">GitHub</a></p>
-                <p class="technology">Java, MySQL; PHP, JavaScript, HTML, CSS</p>
-                <p class="description">ThisCord ist ein standart Messenger, wo man anderen Nachrichten senden kann. Mein Lernziel, war, Websockets kennzulernen.</p>
-            </div>
-
         </div>
 
         <hr>
@@ -128,7 +129,7 @@
         <h1 id="contact">Kontaktier mich</h1>
         <p>Gerne kannst du mir eine E-Mail an der Adresse: <span class="highlight_red">oliver_schlueter@hotmail.com</span> senden oder du hinterlässt mir eine Nachricht mithilfe des Formulars. Ich versuche schnellst möglich anzuworten!</p>
 
-        <form action="contactManager.php" method="post">
+        <form action="assets/php/contactManager.php" method="post">
             <label for="subject">Betreff</label>
             <input type="text" name="subject" placeholder="Betreff..." required>
 
@@ -144,5 +145,6 @@
     </div>
     
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/dialogManager.js"></script>
 </body>
 </html>
