@@ -1,5 +1,5 @@
 
-setInterval(setMyAge, 100);
+//setInterval(setMyAge, 100);
 
 function setMyAge() {
     var myAge = document.getElementById("myAge");
@@ -30,4 +30,22 @@ function setMyAge() {
 
 function myScrollTo(elementName) {
     document.getElementById(elementName).scrollIntoView({block: "start", behavior: "smooth"})
+}
+
+
+function toggleFaq(n) {
+    const parent = document.getElementById("faq-item-" + n);
+    const question = parent.children[0];
+    const toggleSymbol = question.children[0];
+    const answer = parent.children[1];
+    
+    var currentDisplay = answer.style.display;
+
+    if(currentDisplay != "block"){
+        answer.style.display = "block";
+        toggleSymbol.innerHTML = "-";
+    } else {
+        answer.style.display = "none";
+        toggleSymbol.innerHTML = "+";
+    }
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/timeline.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/dialog.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
     <title>Oliver Schlüter</title>
 </head>
 <body>
@@ -24,52 +25,79 @@
         
         <h1 id="aboutMe">Über mich</h1>
         <p class="aboutMeInfo">Hallo, ich bin Oliver und programmiere sehr gerne. Angefangen bin ich ca. 2016 und entdecke seitdem die Welt der Programmierung. Erfahre mehr über mich und meine Projekte weiter unten!</p>
-        <h2>Persönliche Daten</h2>
-        <table class="aboutMeTable">
-            <tr>
-                <td>Name</td>
-                <td>Oliver Schlüter</td>
-            </tr>
-            <tr>
-                <td>Geb.</td>
-                <td>13.03.2003</td>
-            </tr>
-            <!-- <tr>
-                <td>Alter</td>
-                <td><span id="myAge" title="Ich weiß nicht, warum ich das gemacht habe">19 Jahre</span></td>
-            </tr> -->
-            <tr>
-                <td>E-Mail</td>
-                <td>oliver_schlueter@hotmail.com</td>
-            </tr>
-            <tr>
-                <td>GitHub</td>
-                <td><a href="https://github.com/OliverSchlueter" target="_blank">GitHub.com/OliverSchlueter</a></td>
-            </tr>
-        </table>
-
-        <hr class="short">
-        <div class="timelines">
-            <h2>Schulische Laufbahn</h2>
-            <div class="timeline-container">
-                <div class="point">
-                    <p class="date">2021 - 2022</p>
-                    <p class="txt">Schülerstudium<br>Modul: "Grundlagen der Programmierung"</p>
-                </div>
-                <div class="point">
-                    <p class="date">2020 - 2023</p>
-                    <p class="txt">Fachhochschulreife<br> + Informationstechnischer Assisent</p>
-                </div>
-                <div class="point">
-                    <p class="date">2014 - 2020</p>
-                    <p class="txt">Realschule</p>
-                </div>
-                <div class="point">
-                    <p class="date">2009 - 2014</p>
-                    <p class="txt">Grundschule</p>
+        <div class="sideToSide">
+            <div class="leftSide">
+                <div class="timelines">
+                    <h2>Schulische Laufbahn</h2>
+                    <div class="timeline-container">
+                        <div class="point">
+                            <p class="date">2021 - 2022</p>
+                            <p class="txt">Schülerstudium<br>Modul: "Grundlagen der Programmierung"</p>
+                        </div>
+                        <div class="point">
+                            <p class="date">2020 - 2023</p>
+                            <p class="txt">Fachhochschulreife<br> + Informationstechnischer Assisent</p>
+                        </div>
+                        <div class="point">
+                            <p class="date">2014 - 2020</p>
+                            <p class="txt">Realschule</p>
+                        </div>
+                        <div class="point">
+                            <p class="date">2009 - 2014</p>
+                            <p class="txt">Grundschule</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="rightSide">
+                <h2>Persönliche Daten</h2>
+                <table class="aboutMeTable">
+                    <tr>
+                        <td>Name</td>
+                        <td>Oliver Schlüter</td>
+                    </tr>
+                    <tr>
+                        <td>Geb.</td>
+                        <td>13.03.2003</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Alter</td>
+                        <td><span id="myAge" title="Ich weiß nicht, warum ich das gemacht habe">19 Jahre</span></td>
+                    </tr> -->
+                    <tr>
+                        <td>E-Mail</td>
+                        <td>oliver_schlueter@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td><a href="https://github.com/OliverSchlueter" target="_blank">GitHub.com/OliverSchlueter</a></td>
+                    </tr>
+                </table>
+
+                <h2>Fragen und Antworten</h2>
+
+                <div class="faq">
+                    <div class="faq-item" id="faq-item-1">
+                        <p class="question" onclick="toggleFaq(1)">Welches Betriebssystem benutzt du?<span class="faqToggle">+</span></p>
+                        <p class="answer">Hauptsächlich Windows, jedoch hin und wieder Linux zum Experimentieren.</p>
+                    </div>
+                    <div class="faq-item" id="faq-item-2">
+                        <p class="question" onclick="toggleFaq(2)">Wie lange programmierst du schon?<span class="faqToggle">+</span></p>
+                        <p class="answer">2016 habe ich als erstes Kontakt mit Java gehabt und nur wenige Monate danach mit HTML, CSS.</p>
+                    </div>
+                    <div class="faq-item" id="faq-item-3">
+                        <p class="question" onclick="toggleFaq(3)">Was ist deine Lieblings-Programmiersprache?<span class="faqToggle">+</span></p>
+                        <p class="answer">Java war meine erste Programmiersprache, die ich kenngelernt habe und ich mag sie immernoch sehr gerne!</p>
+                    </div>
+                    <div class="faq-item" id="faq-item-4">
+                        <p class="question" onclick="toggleFaq(4)">Welche(n) Editor(en) benutzt du?<span class="faqToggle">+</span></p>
+                        <p class="answer">Lange habe ich Eclipse für Java benutzt, bin jedoch umgestiegen auf <a href="https://www.jetbrains.com/de-de/idea/" target="_blank" class="link">IntelliJ</a>.
+                            Für Web-Anwendungen benutze ich zurzeit <a href="https://code.visualstudio.com/" target="_blank" class="link">Visual Studio Code</a>.
+                            Wenn ich C#-Code schreibe, benutze ich <a href="https://visualstudio.microsoft.com/de/downloads/" target="_blank" class="link">Visual Studio</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
 
         <hr class="short">
 
@@ -94,7 +122,9 @@
                 </p>
             </dialog>
         </div>
-        
+        <div class="sideToSide">
+            
+        </div>
         <div class="skills">
             <div class="skill" style="--skill-percentage: 80%">Java</div>
             <div class="skill" style="--skill-percentage: 65%">C#</div>
@@ -115,7 +145,7 @@
             <div class="project">
                 <p class="name">Portfolio<a class="githubref" href="https://github.com/OliverSchlueter/Portfolio" target="_blank">GitHub</a></p>
                 <p class="technology">HTML, CSS, JavaScript, PHP</p>
-                <p class="description">Dies ist eine Website, welche mein Portfolio sein soll. Es wurde mehr wert auf Design gelegt, als sonst.</p>
+                <p class="description">Dies ist eine Website, welche mein Portfolio sein soll. Es wurde mehr Wert auf Design gelegt, als sonst.</p>
             </div>
             <div class="project">
                 <p class="name">Compiler<a class="githubref" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a></p>
