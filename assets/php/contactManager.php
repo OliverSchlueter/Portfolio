@@ -2,6 +2,7 @@
 
 if(isset($_POST["submit"])){
     $subject = $_POST["subject"];
+    $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
@@ -23,6 +24,11 @@ if(isset($_POST["submit"])){
                     [
                         "name" => "Betreff",
                         "value" => $subject,
+                        "inline" => false
+                    ],
+                    [
+                        "name" => "Name",
+                        "value" => $name,
                         "inline" => true
                     ],
                     [

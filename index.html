@@ -79,7 +79,7 @@
                 <div class="faq">
                     <div class="faq-item" id="faq-item-1">
                         <p class="question" onclick="toggleFaq(1)">Welches Betriebssystem benutzt du?<span class="faqToggle">+</span></p>
-                        <p class="answer">Hauptsächlich Windows, jedoch hin und wieder Linux zum Experimentieren.</p>
+                        <p class="answer">Hauptsächlich Windows (11), jedoch hin und wieder Linux (Kubuntu) zum Experimentieren.</p>
                     </div>
                     <div class="faq-item" id="faq-item-2">
                         <p class="question" onclick="toggleFaq(2)">Wie lange programmierst du schon?<span class="faqToggle">+</span></p>
@@ -123,18 +123,25 @@
             </dialog>
         </div>
         <div class="sideToSide">
-            
-        </div>
-        <div class="skills">
-            <div class="skill" style="--skill-percentage: 80%">Java</div>
-            <div class="skill" style="--skill-percentage: 65%">C#</div>
-            <!-- <div class="skill" style="--skill-percentage: 57%">SQL (MySQL)</div> -->
-            <div class="skill" style="--skill-percentage: 55%">PHP</div>
-            <div class="skill" style="--skill-percentage: 50%">HTML</div>
-            <div class="skill" style="--skill-percentage: 47%">CSS</div>
-            <!-- <div class="skill" style="--skill-percentage: 38%">Git (GitHub)</div> -->
-            <div class="skill" style="--skill-percentage: 35%">JavaScript</div>
-            <div class="skill" style="--skill-percentage: 30%">Python</div>
+            <div class="leftSide alignLeft">
+                <h3>Programmiersprachen</h3>
+                <div class="skills">
+                    <div class="skill" style="--skill-percentage: 65%">Java</div>
+                    <div class="skill" style="--skill-percentage: 48%">C#</div>
+                    <div class="skill" style="--skill-percentage: 45%">HTML & CSS</div>
+                    <div class="skill" style="--skill-percentage: 40%">PHP</div>
+                    <div class="skill" style="--skill-percentage: 30%">Python</div>
+                    <div class="skill" style="--skill-percentage: 22%">JavaScript</div>
+                </div>
+            </div>
+            <div class="rightSide alignRight">
+                <h3>Datenbanken</h3>
+                <div class="skills">
+                    <div class="skill skill-right" style="--skill-percentage: 80%">MySQL</div>
+                    <div class="skill skill-right" style="--skill-percentage: 55%">SQLite</div>
+                    <div class="skill skill-right" style="--skill-percentage: 40%">MongoDB</div>
+                </div>
+            </div>
         </div>
         
         <br>
@@ -143,14 +150,19 @@
         <h1 id="projects">Meine Projekte</h1>
         <div class="projects">
             <div class="project">
+                <p class="name">Tell the World<a class="githubref" href="https://github.com/OliverSchlueter/" target="_blank">GitHub</a></p>
+                <p class="technology">HTML, CSS, JavaScript, PHP, Java, Python, MySQL</p>
+                <p class="description">Ein Full-Stack-Projekt, welches eine Platform bietet, seine Gedanken der Welt mitzuteilen.</p>
+            </div>
+            <div class="project">
                 <p class="name">Portfolio<a class="githubref" href="https://github.com/OliverSchlueter/Portfolio" target="_blank">GitHub</a></p>
                 <p class="technology">HTML, CSS, JavaScript, PHP</p>
-                <p class="description">Dies ist eine Website, welche mein Portfolio sein soll. Es wurde mehr Wert auf Design gelegt, als sonst.</p>
+                <p class="description">Eine Website, welche mein Portfolio sein soll. Hier wird gezeigt, welche Erfahrungen ich schon habe. Es wurde mehr Wert auf Design gelegt, als sonst.</p>
             </div>
             <div class="project">
                 <p class="name">Compiler<a class="githubref" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a></p>
                 <p class="technology">Java, Maven</p>
-                <p class="description">Das Bauen eines Compiler ("Java--") ist ein von mir privates Lernprojekt, um die Abläufe des Kompilieren zu verstehen.</p>
+                <p class="description">Das Bauen eines kleinen Compilers ist ein von mir privates Lernprojekt, um die Abläufe die ein Compiler durchläuft zu verstehen.</p>
             </div>
         </div>
 
@@ -162,6 +174,9 @@
         <form action="assets/php/contactManager.php" method="post">
             <label for="subject">Betreff</label>
             <input type="text" name="subject" placeholder="Betreff..." required>
+            
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Name..." required>
 
             <label for="email">E-Mail</label>
             <input type="email" name="email" placeholder="E-Mail..." required>

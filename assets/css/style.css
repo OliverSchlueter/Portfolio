@@ -34,6 +34,12 @@ h2{
     color: #ad4829;
 }
 
+h3{
+    font-size: 27px;
+    color: #ad4829;
+    margin: 10px 0px;
+}
+
 p{
     font-size: 20px;
     max-width: 50%;
@@ -74,6 +80,13 @@ hr.short{
     grid-template-columns: 1fr 1fr;
 }
 
+.alignLeft{
+    text-align: left;
+}
+
+.alignRight{
+    text-align: right;
+}
 
 /* Header */
 
@@ -188,14 +201,6 @@ header .bgCode{
     filter: brightness(80%);
 }
 
-.skills{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border-radius: 2px;
-}
-
 .skill {
     background: linear-gradient(90deg, rgba(252, 37, 37, 0.6) 0%, rgba(236, 181, 0, 0.6) 100%);
     text-align: right;
@@ -208,10 +213,21 @@ header .bgCode{
     transition: border-radius ease-in-out .15s;
 }
 
+.skill-right{
+    margin-left: auto; 
+    text-align: left;
+    background: linear-gradient(90deg, rgba(236, 181, 0, 0.6) 0%, rgba(252, 37, 37, 0.6) 100%);
+    border-radius: 20px 5px 5px 20px;
+    transition: border-radius ease-in-out .15s;
+}
+
 .skill:hover{
     border-radius: 5px 10px 10px 5px;
 }
 
+.skill-right:hover{
+    border-radius: 10px 5px 5px 10px;
+}
 
 /* My Projects */
 
