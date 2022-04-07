@@ -42,7 +42,6 @@ dialog p{
 }
 
 dialog .hideBtn{
-    content: "X";
     font-size: 20px;
     font-weight: 700;
     float: right;
@@ -50,9 +49,11 @@ dialog .hideBtn{
     cursor: pointer;
     border-radius: 50%;
     margin: 0;
-    padding: 5px 10px;
-    color: rgb(121, 21, 21);
-    background-color: rgb(223, 81, 81);
+    padding: 10px 17px;
+    margin-top: -10px;
+    margin-right: -8px;
+    color: var(--light-orange);
+    background-color: rgb(32, 32, 32);
     transition: all .2s ease-in;
 }
 

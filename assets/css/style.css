@@ -88,6 +88,12 @@ hr.short{
     text-align: right;
 }
 
+/* Footer */
+footer{
+    background-color: #222;
+    padding: 40px;
+}
+
 /* Header */
 
 header{
