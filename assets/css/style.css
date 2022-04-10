@@ -253,6 +253,7 @@ header .bgCode{
     min-width: 200px;
     max-width: 400px;
     min-height: 150px;
+    height: fit-content;
     margin: 15px;
     margin-top: 50px;
     padding: 10px 20px;
