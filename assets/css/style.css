@@ -18,9 +18,12 @@ body{
     margin: 0;
     box-sizing: border-box;
     text-align: center;
+    min-height: 720px;
+    min-width: 1280px;
 }
 
 #up-btn{
+    visibility: hidden;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -40,6 +43,7 @@ body{
 #up-btn:hover{
     box-shadow: rgba(255, 134, 54, 0.671) 0px 0px 18px;
 }
+
 
 h1, ul{
     margin: 0;
@@ -306,6 +310,8 @@ header .bgCode{
     padding: 5px 10px;
     border-radius: 5px;
     float: right;
+    margin-top: 5px;
+    margin-right: -7px;
     transition: all ease-in-out .2s;
 }
 

@@ -28,6 +28,21 @@ function setMyAge() {
     //myAge.innerHTML = years + " Jahre " + months + " Monate " + days + " Tage " + hours + " Stunden " + minutes + " Minuten " + seconds + " Sekunden"
 }
 
+document.addEventListener("scroll", function (e) {
+    //const maxPos = document.body.scrollHeight - window.innerHeight;
+    //const percentage = scrollPos / maxPos;
+    
+    const scrollPos = window.scrollY;
+    const headerHeight = document.getElementById("header").scrollHeight;
+    const up_btn = document.getElementById("up-btn");
+
+    if(scrollPos > headerHeight/2){
+        up_btn.style.visibility = "visible";
+    } else {
+        up_btn.style.visibility = "hidden";
+    }
+})
+
 function myScrollTo(elementName) {
     document.getElementById(elementName).scrollIntoView({block: "start", behavior: "smooth"})
 }
