@@ -37,7 +37,7 @@ if(isset($_POST["submit"])){
                         "inline" => true
                     ],
                     [
-                        "name" => "Datum",
+                        "name" => "Datum & Zeit",
                         "value" => date("d.m.Y H:i:s"),
                         "inline" => true
                     ],
@@ -59,7 +59,8 @@ if(isset($_POST["submit"])){
 }
 
 function sendDiscordMessage($json_data){
-    $webhookurl = "https://discord.com/api/webhooks/956634119520018472/u-7CHSdb-IOnLnx67U7ltduxeG9jwH2phBSoZNrFjWInAy2P4VsMnMl02E7F6NTs7N5s";
+    $config = json_decode(file_get_contents("config.json"));
+    $webhookurl = $config->{"discord-webhook-link"};
 
     $ch = curl_init( $webhookurl );
     curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
