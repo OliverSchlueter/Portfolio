@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Oliver Schlüter | Compiler</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <button id="up-btn" onclick="myScrollTo('header')">&#x1F881;</button>
+    <div>
+        <header id="header">
+            <div class="bgCode"></div>
+            <ul class="nav">
+                <li><a href="../../">Portfolio</a></li>
+                <li><a onclick="myScrollTo('idea')">Idee</a></li>
+                <li><a onclick="myScrollTo('implementation')">Umsetzung</a></li>
+                <li><a onclick="myScrollTo('features')">Features</a></li>
+                <li><a href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a></li>
+            </ul>
+            <h1 class="headline">Java--</h1>
+            <h2 class="subtitle">Meine eigene Programmiersprache</h2>
+        </header>
+
+        <h1 id="idea">Idee</h1>
+        <div class="sideToSide">
+            <div class="leftSide">
+                <h2>Projektfindung</h2>
+                <p style="max-width: 90%; text-align: justify;">Kurz nach dem Schülerstudium suchte ich eine neue Herrausforderung, wo ich mein Wissen umsetzen konnte. Ich guckte mir viele Themen an und bin schließlich bei künstliche Intelligenz und Compilerbau gelandet. Bei beiden Themen gibt es viel Wissen kostenfrei und einfach zur Verfügung. Am Ende entschied ich mich für den Compilerbau, weil ich schon immer wissen wollte, wie das genau unter der Haube funktioniert.</p>
+            </div>
+            <div class="rightSide">
+                <h2>Der Name</h2>
+                <p style="max-width: 90%; text-align: justify;">Schnell stand auch fest, wie ich meine "eigene Programmiersprache" nennen wollte. Java++. "Java", weil ich die Sprache am Java-Syntax (und Python) anlehnen wollte und dass "++" hat den gleichen Grund wie bie C++ <a href="https://de.wikipedia.org/wiki/C%2B%2B#Der_Name_%E2%80%9EC++%E2%80%9C">(klick hier)</a>. Später wurde mir erst bewusst, wie viele Funktionen so eine Programmiersprache eigentlich hat und dass ich so viel (zeitlich) erstmal nicht bieten kann und benannte sie dann zu "Java--" um.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1 id="implementation">Umsetzung</h1>
+        <p>Zu erst verschaffte ich mir einen Überblick über den Ablauf des Kompilierens. Weiter beschloss ich, dass man erstmal nur Code in das Programm reingeben kann und diesen Ausführen kann. Das Kompilieren in eine andere Sprache ist erstmal nicht vorgesehen. Danach begann ich mit ersten zwei Phasen, das Erfassen und Aufbereiten des Quellcodes. Bei den nächsten Phasen, folgte ich nicht mehr den "standart Weg" und entwickelte mir ein eigenes Objekt orientiertes Konstrukt. Daraus erschloss sich folgendes UML-Diagramm:</p>
+        
+        <a href="https://raw.githubusercontent.com/OliverSchlueter/JavaMM/master/Diagrams/UML.png" target="_blank"><img src="https://raw.githubusercontent.com/OliverSchlueter/JavaMM/master/Diagrams/UML.png" width="70%"></a>
+
+        <hr>
+
+        <h1 id="features">Features</h1>
+        <h2>Variablen</h2>
+        <p>Variablen gehören zur fast jeder Programmiersprache dazu und sind unverzeichtbar. Die Basisdatentypen sind: char, string, int, long, float, double und boolean. Es ist nicht erlaubt Zahlen im Variablename zu benutzen. Die Variablen, die mit einen "$"-Symbol beginnen sind von der Programmiersprache vorgegeben.</p>
+        <div class="sideToSide" style="width: 1500px;">
+            <div class="leftSide">
+                <h3>Deklariern</h3>
+                <p>Syntax: <span class="inline_code">[Datentyp] [Name] = [Wert]</span></p>
+                <p>Beispiele:<br>
+                    <div class="block_code">
+                        int var = 42<br>
+                        string varTwo = "Hello World"<br>
+                        double varThree = 842.75
+                    </div>
+                </p>
+            </div>
+            <div class="rightSide">
+                <h3>Zuweisen</h3>
+                <p>Syntax: <span class="inline_code">[Name] = [Wert]</span></p>
+                <p>Beispiele:<br>
+                    <div class="block_code">
+                        var = 40 + 2<br>
+                        var = var + 1<br>
+                        string varTwo = "Hello" + " World"<br>
+                        double varThree = 800 + 42.75
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <h2>Funktionen</h2>
+        <p>Auch Funktionen sind essentiell. Man kann sich wiederholdenden Code abspeichern und immer wieder aufrufen. Sie können auch einen Wert zurückgeben.</p>
+
+        <h3>Definieren</h3>
+        <p>Syntax:<br>
+            <div class="block_code">
+                def [Rückgabetyp] [Name] ( [[Attribut 1] , [Attribut 2] , ...] ) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; [Code...]<br>
+                }
+            </div>
+        </p>
+        <p>Beispiele:</p>
+        <div class="sideToSide">
+            <div class="block_code">
+                def int add ( int x , int y ) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; int result = x + y<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; return result<br>
+                }
+            </div>
+            <div class="block_code">
+                def void sayHello ( string name ) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; print ( "Hello, " )<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; println ( name )<br>
+                }
+            </div>
+        </div>
+        
+        <h3>Aufrufen</h3>
+        <p>Syntax: <span class="inline_code">[Name] ( [[Parameter 1] , [Parameter 2] ...] )</span></p>
+
+
+        <p>Ein paar Funktionen sind von der Programmiersprache vorgegeben.</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Attribut(e)</th>
+                <th>Rückgabetyp</th>
+                <th>Funktion</th>
+                <th>Beispiel(e)</th>
+            </tr>
+            <tr>
+                <td>print</td>
+                <td>object message</td>
+                <td>void</td>
+                <td>Schreibt den Wert des Parameters in der Konsole ohne \n</td>
+                <td><span class="inline_code">print ( "Hello World" )</span></td>
+            </tr>
+            <tr>
+                <td>println</td>
+                <td>object message</td>
+                <td>void</td>
+                <td>Schreibt den Wert des Parameters in der Konsole mit \n am Ende</td>
+                <td><span class="inline_code">println ( "Hello World" )</span></td>
+            </tr>
+            <tr>
+                <td>dump</td>
+                <td>string type</td>
+                <td>void</td>
+                <td>Zeigt Informationen über Variablen oder Funktionen. Als Parameter: "variables" - für Variablen, "functions" - für Funktionen</td>
+                <td><div class="block_code" style="margin: 0">dump ( "variables" )<br>dump ( "functions" )</div></td>
+            </tr>
+            <tr>
+                <td>input</td>
+                <td>string message</td>
+                <td>string</td>
+                <td>Sendet eine Nachricht und fordert den Benutzer auf eine Eingabe zu tätigen</td>
+                <td><div class="block_code" style="margin: 0">input ( "Was ist dein Alter?: " )<br>string alter = $USER_INPUT</div></td>
+            </tr>
+            <tr>
+                <td>clearConsole</td>
+                <td>Keine</td>
+                <td>void</td>
+                <td>Leert die Konsole</td>
+                <td><span class="inline_code">clearConsole ( )</span></td>
+            </tr>
+            <tr>
+                <td>exit</td>
+                <td>Keine</td>
+                <td>void</td>
+                <td>Beendet das Programm</td>
+                <td><span class="inline_code">exit ( )</span></td>
+            </tr>
+        </table>
+
+    </div>
+    <footer>
+        <p style="max-width: 100%;">&copy; 2022 Oliver Schlüter</p>
+        <p style="max-width: 100%; font-size: 1em;">oliver_schlueter@hotmail.com &bull; <a href="https://github.com/OliverSchlueter" target="_blank">GitHub.com/OliverSchlueter</a> &bull; <a href="../../Impressum/">Impressum</a></p>
+    </footer>
+    
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
