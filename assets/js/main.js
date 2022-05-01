@@ -1,39 +1,59 @@
+const slide_ins = [];
 
-//setInterval(setMyAge, 100);
+Array.from(document.getElementsByClassName("slide_in_top")).forEach(e => {
+    slide_ins.push({
+        element: e,
+        side: "top"
+    });
+    e.classList.add("hide_element");
+});
 
-function setMyAge() {
-    var myAge = document.getElementById("myAge");
+Array.from(document.getElementsByClassName("slide_in_bottom")).forEach(e => {
+    slide_ins.push({
+        element: e,
+        side: "bottom"
+    });
+    e.classList.add("hide_element");
+});
 
-    var bday = new Date("2003-03-13T09:10:00");
-    var now = new Date();
+Array.from(document.getElementsByClassName("slide_in_left")).forEach(e => {
+    slide_ins.push({
+        element: e,
+        side: "left"
+    });
+    e.classList.add("hide_element");
+});
 
-    var years = Math.abs(now.getFullYear() - bday.getFullYear());
-    var months = Math.abs(now.getMonth() - bday.getMonth());
-    var days = Math.abs(now.getDate() - bday.getDate());
-    var hours = Math.abs(now.getHours() - bday.getHours());
-    var minutes = Math.abs(now.getMinutes() - bday.getMinutes());
-    var seconds = Math.abs(now.getSeconds() - bday.getSeconds());
+Array.from(document.getElementsByClassName("slide_in_right")).forEach(e => {
+    slide_ins.push({
+        element: e,
+        side: "right"
+    });
+    e.classList.add("hide_element");
+});
 
-    var ageStr = "";
-    ageStr += years + "y ";
-    ageStr += (months > 0 ? months + "m " : "");
-    ageStr += (days > 0 ? days + "d " : "");
-    ageStr += (hours > 0 ? hours + "h " : "");
-    ageStr += (minutes > 0 ? minutes + "min " : "");
-    ageStr += (seconds > 0 ? seconds + "sek " : "");
+Array.from(document.getElementsByClassName("slide_in_scale")).forEach(e => {
+    slide_ins.push({
+        element: e,
+        side: "scale"
+    });
+    e.classList.add("hide_element");
+});
 
-    ageStr = ageStr.substring(0, ageStr.length - 1);
 
-    myAge.innerHTML = ageStr;
-    //myAge.innerHTML = years + " Jahre " + months + " Monate " + days + " Tage " + hours + " Stunden " + minutes + " Minuten " + seconds + " Sekunden"
-}
 
-document.addEventListener("scroll", function (e) {
+document.addEventListener("scroll", scrollListener);
+
+scrollListener();
+
+
+function scrollListener(){
     //const maxPos = document.body.scrollHeight - window.innerHeight;
     //const percentage = scrollPos / maxPos;
     
     const scrollPos = window.scrollY;
     const headerHeight = document.getElementById("header").scrollHeight;
+
     const up_btn = document.getElementById("up-btn");
 
     if(scrollPos > headerHeight/2){
@@ -41,10 +61,35 @@ document.addEventListener("scroll", function (e) {
     } else {
         up_btn.style.visibility = "hidden";
     }
-})
+
+
+    for (let i = 0; i < slide_ins.length; i++) {
+        const s = slide_ins[i];
+        
+        if(!s.done){
+            s.element.classList.remove("hide_element");
+            if(isElementVisible(s.element)){
+                s.element.classList.add("slide_in_" + s.side);
+                slide_ins.splice(i, 1);
+                console.log(slide_ins.length);
+            } else {
+                s.element.classList.add("hide_element");
+            }
+            
+        }
+    }
+}
+
+
+function isElementVisible(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top + 100 <= screen.availHeight + 20;
+}
 
 function myScrollTo(elementName) {
-    document.getElementById(elementName).scrollIntoView({block: "start", behavior: "smooth"})
+    slide_ins.forEach(s => s.element.classList.remove("hide_element"));
+    document.getElementById(elementName).scrollIntoView({block: "start", behavior: "smooth"});
+    slide_ins.forEach(s => !s.done ? s.element.classList.add("hide_element") : none);
 }
 
 

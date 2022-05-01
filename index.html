@@ -14,7 +14,7 @@
     <div>
         <header id="header">
             <div class="bgCode two"></div>
-            <ul class="nav">
+            <ul class="nav slide_in_top">
                 <li><a onclick="myScrollTo('aboutMe')">Über Mich</a></li>
                 <li><a onclick="myScrollTo('projects')">Projekte</a></li>
                 <li><a onclick="myScrollTo('contact')">Kontakt</a></li>
@@ -27,7 +27,7 @@
         <h1 id="aboutMe">Über mich</h1>
         <p class="aboutMeInfo">Hallo, ich bin Oliver und programmiere sehr gerne. Angefangen bin ich ca. 2016 und entdecke seitdem die Welt der Programmierung. Erfahre mehr über mich und meine Projekte weiter unten!</p>
         <div class="sideToSide">
-            <div class="leftSide">
+            <div class="leftSide slide_in_left">
                 <div class="timelines">
                     <h2>Schulische Laufbahn</h2>
                     <div class="timeline-container">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rightSide">
+            <div class="rightSide slide_in_right">
                 <h2>Persönliche Daten</h2>
                 <table class="aboutMeTable">
                     <tr>
@@ -61,10 +61,6 @@
                         <td>Geb.</td>
                         <td>13.03.2003</td>
                     </tr>
-                    <!-- <tr>
-                        <td>Alter</td>
-                        <td><span id="myAge" title="Ich weiß nicht, warum ich das gemacht habe">19 Jahre</span></td>
-                    </tr> -->
                     <tr>
                         <td>E-Mail</td>
                         <td>oliver_schlueter@hotmail.com</td>
@@ -125,7 +121,7 @@
         </div>
         <p>"Man lernt nie aus" - dieses Sprichwort, glaub ich sehr gut zur Programmierung. Schon fast täglich lerne ich neue Wege, um Probleme zu lösen und um Code zu optimieren.</p>
         <div class="sideToSide">
-            <div class="leftSide alignLeft">
+            <div class="leftSide alignLeft slide_in_left">
                 <h3>Programmiersprachen</h3>
                 <div class="skills">
                     <div class="skill" style="--skill-percentage: 70%">Java</div>
@@ -136,7 +132,7 @@
                     <div class="skill" style="--skill-percentage: 22%">JavaScript</div>
                 </div>
             </div>
-            <div class="rightSide alignRight">
+            <div class="rightSide alignRight slide_in_right">
                 <h3>Datenbanken</h3>
                 <div class="skills">
                     <div class="skill skill-right" style="--skill-percentage: 80%">MySQL</div>
@@ -147,12 +143,16 @@
             </div>
         </div>
         
-        <br>
         <hr>
 
         <h1 id="projects">Meine Projekte</h1>
+        <p>
+            Ob in der Schule oder auch (zum Großteil) in meiner Freizeit, habe ich schon ein paar Vorzeigeprojekte geschaffen, welche ich dir gerne zeigen will!<br>
+            Es sind viele Stunden / Tage / Wochen in den jeweiligen Projekten eingeflossen.<br><br>
+            Nicht alles ist perfekt! Wenn du Fehler, Verbesserungsvorschläge oder weitere Feature-Ideen hast - dann kannst du mir sie gerne zukommen lassen.
+        </p>
         <div class="projects">
-            <div class="project">
+            <div class="project slide_in_scale">
                 <p class="name">Tell the world</p>
                 <p class="technology">Python, HTML, CSS, JavaScript, PHP, MongoDB, REST-API</p>
                 <p class="description">Ein Full-Stack-Projekt, welches eine Platform bietet, seine Gedanken der Welt mitzuteilen.</p>
@@ -161,7 +161,7 @@
                     <a class="button_link" href="https://github.com/OliverSchlueter/TellTheWorld" target="_blank">GitHub</a>
                 </p>
             </div>
-            <div class="project">
+            <div class="project slide_in_scale">
                 <p class="name">Portfolio</p>
                 <p class="technology">HTML, CSS, JavaScript, PHP</p>
                 <p class="description">Eine Website, welche mein Portfolio sein soll. Hier wird gezeigt, welche Erfahrungen ich schon habe. Es wurde mehr Wert auf Design gelegt, als sonst.</p>
@@ -169,7 +169,7 @@
                     <a class="button_link" href="https://github.com/OliverSchlueter/Portfolio" target="_blank">GitHub</a>
                 </p>
             </div>
-            <div class="project">
+            <div class="project slide_in_scale">
                 <p class="name">Compiler</p>
                 <p class="technology">Java, Maven</p>
                 <p class="description">Das Bauen eines kleinen Compilers ist ein von mir privates Lernprojekt, um die Abläufe die ein Compiler durchläuft zu verstehen.</p>
@@ -178,7 +178,7 @@
                     <a class="button_link" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a>
                 </p>
             </div>
-            <div class="project">
+            <div class="project slide_in_scale">
                 <p class="name">Verkaufsprojekt</p>
                 <p class="technology">C#, HTML, CSS, PHP, JavaScript, MySQL, Access</p>
                 <p class="description">Ein praktisches Schulprojekt, wo das Augenmerk auf die Planung und Dokumentation gelegt wurde. Es simuliert ein Online-Shop, wo man verschiedene Software verkaufen und kaufen kann.</p>
@@ -191,22 +191,23 @@
         <hr>
 
         <h1 id="contact">Kontaktier mich</h1>
-        <p>Gerne kannst du mir eine E-Mail an der Adresse: <span class="highlight_red">oliver_schlueter@hotmail.com</span> senden oder du hinterlässt mir eine Nachricht mithilfe des Formulars. Ich versuche schnellst möglich anzuworten!</p>
+        <p>Du willst mir etwas fragen, mir Feedback zu einem Projekt geben oder nur etwas erzählen?<br><br>
+            Gerne kannst du mir eine E-Mail an der Adresse: <span class="highlight_red">oliver_schlueter@hotmail.com</span> senden oder du hinterlässt mir eine Nachricht mithilfe des Formulars. Ich versuche schnellst möglich anzuworten!</p>
 
         <form action="assets/php/contactManager.php" method="post">
-            <label for="subject">Betreff</label>
-            <input type="text" name="subject" placeholder="Betreff..." required>
+            <label for="subject" class="slide_in_left">Betreff</label>
+            <input type="text" name="subject" class="slide_in_left" placeholder="Betreff..." required>
             
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Name..." required>
+            <label for="name" class="slide_in_right">Name</label>
+            <input type="text" name="name" class="slide_in_right" placeholder="Name..." required>
 
-            <label for="email">E-Mail</label>
-            <input type="email" name="email" placeholder="E-Mail..." required>
+            <label for="email" class="slide_in_left">E-Mail</label>
+            <input type="email" name="email" class="slide_in_left" placeholder="E-Mail..." required>
 
-            <label for="message">Nachricht</label>
-            <textarea name="message" rows="5" placeholder="Nachricht..." required></textarea>
+            <label for="message" class="slide_in_right">Nachricht</label>
+            <textarea name="message" class="slide_in_right" rows="5" placeholder="Nachricht..." required></textarea>
 
-            <button type="submit" name="submit">Senden</button>
+            <button type="submit" name="submit" class="slide_in_left">Senden</button>
         </form>
         <div style="margin-top: 100px;"></div>
     </div>
