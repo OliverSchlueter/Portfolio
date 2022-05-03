@@ -165,7 +165,7 @@ header .bgCode.two{
 
 
 .headline{
-    font-size: 7em;
+    font-size: 8em;
     font-weight: 700;
     text-align: center;
     padding-top: 15%;
@@ -273,6 +273,10 @@ header .bgCode.two{
     width: var(--skill-percentage);
     margin-bottom: 10px;
     transition: border-radius ease-in-out .15s;
+    animation-name: skill_animation;
+    animation-duration: 0.75s;
+    animation-timing-function: cubic-bezier(.65,.05,.36,1);
+    animation-iteration-count: 1;
 }
 
 .skill-right{
@@ -289,6 +293,11 @@ header .bgCode.two{
 
 .skill-right:hover{
     border-radius: 10px 5px 5px 10px;
+}
+
+@keyframes skill_animation {
+    from { width: 5%; }
+    to { width: var(--skill-percentage); }
 }
 
 /* My Projects */
