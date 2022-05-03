@@ -4,10 +4,13 @@
     --background-color: rgb(20, 20, 20);
     --foreground-color: rgb(250, 250, 250);
     --light-orange: #ff6a00;
+    --orange: #ad4829;
+    --dark-orange: #ad4829;
+    --yellow: #eec641;
 }
 
 ::selection{
-    background-color: #eec641;
+    background-color: var(--yellow);
 }
 
 body{
@@ -20,6 +23,16 @@ body{
     text-align: center;
     min-height: 720px;
     min-width: 1280px;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 7px 3px #ff6a008f;
 }
 
 #up-btn{
@@ -137,7 +150,20 @@ hr.short{
 footer{
     background-color: #222;
     padding: 40px;
+}
+
+.footer-line{
     margin-top: 50px;
+    padding-top: 1px;
+    background: linear-gradient(90deg, rgb(255, 217, 0), rgb(255, 115, 0), rgb(255, 38, 0), rgb(255, 115, 0), rgb(255, 217, 0));
+    filter: brightness(75%);
+    background-size: 200%;
+    animation: footer_top_animation 5s linear infinite;
+}
+
+@keyframes footer_top_animation {
+    from { background-position: 0% 0% }
+    to { background-position: -200% 0% }
 }
 
 /* Header */
@@ -156,6 +182,7 @@ header .bgCode{
     min-height: 100vh;
     background: url("../img/code_1.png") no-repeat left center;
     background-size: cover;
+    background-repeat: no-repeat;
     filter: blur(1.5px);
 }
 
