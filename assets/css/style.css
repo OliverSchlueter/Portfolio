@@ -200,6 +200,31 @@ header .bgCode.two{
     cursor: pointer;
 }
 
+.logo{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(56, 56, 56);
+    padding: 1px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    animation-name: logo_up_animation;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes logo_up_animation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
 
 /* Nav */
 
