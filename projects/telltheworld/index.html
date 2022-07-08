@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Oliver Schlüter | TellTheWorld</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <button id="up-btn" onclick="myScrollTo('header')">&#x1F881;</button>
+    <div>
+        <header id="header">
+            <div class="bgCode three"></div>
+            <ul class="nav">
+                <img class="logo" src="../../assets/img/logo.png" alt="OS">
+                <li><a href="../../#projects">Portfolio</a></li>
+                <li><a onclick="myScrollTo('idea')">Idee</a></li>
+                <li><a onclick="myScrollTo('rest_api')">RESTful API</a></li>
+                <li><a onclick="myScrollTo('screenshots')">Screenshots</a></li>
+                <li><a href="https://github.com/OliverSchlueter/TellTheWorld" target="_blank">GitHub</a></li>
+            </ul>
+            <h1 class="headline">Tell The World</h1>
+            <h2 class="subtitle">Kurznachrichtendienst, um seine Gedanken zu teilen</h2>
+        </header>
+
+        <h1 id="idea">Die Idee</h1>
+        <div class="sideToSide">
+            <div class="leftSide slide_in_left">
+                <h2>Projektfindung</h2>
+                <p style="max-width: 90%; text-align: justify;">Ich wollte mal ein komplettes großes Projekt umsetzen. Weil ich nicht gut darin bin, selber neue Projektideen zu finden, habe ich gegooglet. Ich hab einen guten Tipp gefunden, wobei es darum geht eine vorhandene Website "nachzumachen" oder sich an dieser zu inspirieren. Nach kurzer Überlegung habe ich mich entschieden eine Art Twitter-Klon zu machen.</p>
+            </div>
+            <div class="rightSide slide_in_right">
+                <h2>Der Name</h2>
+                <p style="max-width: 90%; text-align: justify;">Den Name TellTheWorld habe ich davon abgeleitet, was man mit der Website machen kann - etwas der Welt erzählen. Auch wenn es nur ein "Lernprojekt" ist, habe ich später noch die Möglichkeit die Website zu veröffentlichen.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1 id="rest_api">RESTful API</h1>
+        <p class="slide_in_left">Ungefär zur gleichen Zeit, wo ich das Projekt gestartet habe, habe ich auch RESTful entdeckt und wollte dies ebenfalls in diesen Projekt mit einbinden. Da ich ebenfalls mal etwas mit Python machen wollte, habe ich die RESTful API mit flask und flask_restful umgesetzt</p>
+        
+        <p class="slide_in_right">Den Code zum Python-Backend findest du hier: <a href="https://github.com/OliverSchlueter/TellTheWorld/tree/main/Code/Backend">Klick hier</a></p>
+        
+        <h2>API Benutzen</h2>
+        <p class="slide_in_left">Repo und notwendige Pakete herunterladen</p>
+        <p class="slide_in_right">Mit Python starten: <span class="inline_code">python3 ./Code/Backend/main.py</span></p>
+        <p class="slide_in_left">Informationen über einen User: <span class="inline_code">localhost:8080/api/v1/user/(user_tag)/</span></p>
+        <p class="slide_in_right">Informationen über eine Nachricht: <span class="inline_code">localhost:8080/api/v1/message/(message_id)/</span></p>
+
+        <hr>
+
+        <h1 id="screenshots">Screenshots</h1>
+        <p>Stand: 08.07.2022</p>
+        <hr class="short">
+        
+        <p>Landing page</p>
+        <img class="slide_in_left" src="../../assets/img/telltheworld/landing_page.png">
+
+        <p>Register form</p>
+        <img class="slide_in_right" src="../../assets/img/telltheworld/register.png">
+
+        <p>Login form</p>
+        <img class="slide_in_left" src="../../assets/img/telltheworld/login.png">
+
+        <p>Main page</p>
+        <img class="slide_in_right" src="../../assets/img/telltheworld/main.png">
+
+        <p>Write message dialog</p>
+        <img class="slide_in_left" src="../../assets/img/telltheworld/write_message.png">
+
+    </div>
+    <footer>
+        <p style="max-width: 100%;">&copy; 2022 Oliver Schlüter</p>
+        <p style="max-width: 100%; font-size: 1em;">oliver_schlueter@hotmail.com &bull; <a href="https://github.com/OliverSchlueter" target="_blank">GitHub.com/OliverSchlueter</a> &bull; <a href="../../Impressum/">Impressum</a></p>
+    </footer>
+    
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
