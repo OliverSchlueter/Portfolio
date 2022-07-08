@@ -36,6 +36,10 @@ div .point:hover{
   color: #ff6a00;
 }
 
+.point .date.future{
+  color: var(--yellow);
+}
+
 .point .txt, .point .date {
   margin: 10px 20px;
   max-width: 100%;
