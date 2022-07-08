@@ -390,6 +390,13 @@ header .bgCode.two{
     padding-bottom: 10px;
 }
 
+.wip{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    float: right;
+    color: var(--orange);
+}
+
 .button_link{
     font-size: 20px;
     background-color: #913519;
