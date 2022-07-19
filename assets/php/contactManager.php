@@ -25,17 +25,17 @@ if(isset($_POST["submit"])){
         //Server settings
         // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
-        $mail->Host = "plesk2.living-bots.net";
+        $mail->Host = "mail.dnslinq.de";
         $mail->SMTPAuth = true;
-        $mail->Username = "spam@xn--schlter-oliver-jsb.de";
+        $mail->Username = "mail@schlueter-oliver.de";
         $mail->Password = $config->{"mail-password"};
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
     
         //Recipients
-        $mail->setFrom("spam@xn--schlter-oliver-jsb.de", "Portfolio");
-        $mail->addAddress("info@xn--schlter-oliver-jsb.de");
-        $mail->addCC("spam@xn--schlter-oliver-jsb.de");
+        $mail->setFrom("mail@schlueter-oliver.de", "Portfolio");
+        $mail->addAddress("mail@schlueter-oliver.de");
+        $mail->addCC("mail@schlueter-oliver.de");
     
         //Content
         $mail->isHTML(true);
