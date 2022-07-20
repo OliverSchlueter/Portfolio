@@ -1,0 +1,38 @@
+.snackbar{
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    min-width: 250px;
+    max-width: 400px;
+    min-height: 20px;
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    color: var(--yellow);
+    text-align: center;
+    padding: 10px;
+    /* border-bottom: 5px solid var(--orange); */
+    box-shadow: 0px 0px 5px 2px var(--yellow);
+    animation: snackbar_fadein 0.5s, snackbar_fadeout 0.5s 2.5s;
+}
+
+.snackbar p{
+    font-size: 1.3em;
+    font-weight: bold;
+    max-width: 100%;
+    margin: 0;
+}
+
+.snackbar p::selection{
+    background-color: var(--orange);
+}
+
+@keyframes snackbar_fadein {
+    from { bottom: 0; opacity: 0; }
+    to { bottom: 30px; opacity: 1; }
+}
+
+@keyframes snackbar_fadeout {
+    from { bottom: 30px; opacity: 1; }
+    to { bottom: -100px; opacity: 0; }
+}

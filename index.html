@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/dialog.css">
     <link rel="stylesheet" href="assets/css/faq.css">
+    <link rel="stylesheet" href="assets/css/snackbar.css">
     <title>Oliver Schlüter</title>
 </head>
 <body>
@@ -16,13 +17,13 @@
         <header id="header">
             <div class="bgCode two"></div>
             <ul class="nav slide_in_top">
-                <img class="logo" src="assets/img/logo.png">
+                <img class="logo" id="logo" src="assets/img/logo.png">
                 <li><a onclick="myScrollTo('aboutMe')">Über Mich</a></li>
                 <li><a onclick="myScrollTo('projects')">Projekte</a></li>
                 <li><a onclick="myScrollTo('contact')">Kontakt</a></li>
                 <li><a href="https://github.com/OliverSchlueter" target="_blank">GitHub</a></li>
             </ul>
-            <h1 class="headline">Oliver Schlüter</h1>
+            <h1 class="headline">Oliver Schl<span onclick="snackbar('Dieses \'ü\' hat viele Probleme mit meiner Domain verursacht :I')">ü</span>ter</h1>
             <h2 class="subtitle">Angehender Informationstechnischer Assistent</h2>
             <div class="bottom-line"></div>
         </header>
@@ -134,7 +135,7 @@
                 <div class="skills">
                     <div class="skill" style="--skill-percentage: 70%">Java</div>
                     <div class="skill" style="--skill-percentage: 50%">C#</div>
-                    <div class="skill" style="--skill-percentage: 50%">HTML & CSS</div>
+                    <div class="skill" style="--skill-percentage: 50%"><span onclick="snackbar('Unterschätze niemals HTML!<br> 1,88 Milliarden Websiten wurden damit erstellt.')">HTML</span> & CSS</div>
                     <div class="skill" style="--skill-percentage: 50%">PHP</div>
                     <div class="skill" style="--skill-percentage: 40%">JavaScript</div>
                     <div class="skill" style="--skill-percentage: 30%">Python</div>
@@ -241,5 +242,6 @@
         </footer>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dialogManager.js"></script>
+    <script src="assets/js/snackbar.js"></script>
 </body>
 </html>
