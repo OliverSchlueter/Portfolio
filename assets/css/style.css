@@ -383,7 +383,7 @@ header .bgCode.three{
     background-color: #222;
     position: relative;;
     border-radius: 10px;
-    width: 420px;
+    width: 400px;
     min-height: 150px;
     height: max-content;
     margin: 15px;
@@ -417,6 +417,7 @@ header .bgCode.three{
     color: var(--light-orange);
     font-size: 30px;
     font-weight: 700;
+    word-break: break-word;
 }
 
 .project .technology{
@@ -428,10 +429,13 @@ header .bgCode.three{
 }
 
 .wip{
-    font-size: 0.7em;
+    font-size: 1.3em;
     text-transform: uppercase;
-    float: right;
+    font-weight: bold;
     color: var(--orange);
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
 .button_link{
