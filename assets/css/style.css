@@ -130,6 +130,14 @@ img{
     color: rgb(84, 204, 240);
 }
 
+.highlight_white{
+    color: var(--foreground-color);
+}
+
+.mark_red{
+    background-color: rgb(240, 84, 84);
+}
+
 .sideToSide{
     margin-left: auto;
     margin-right: auto;
