@@ -75,13 +75,14 @@ p{
     margin-right: auto;
 }
 
-a{
+a, .clickable{
+    cursor: pointer;
     text-decoration: none;
     color: var(--foreground-color);
     transition: ease-in-out color .2s;
 }
 
-a:hover{
+a:hover, .clickable:hover{
     color: #eec641;
 }
 
@@ -136,6 +137,10 @@ img{
 
 .mark_red{
     background-color: rgb(240, 84, 84);
+}
+
+.courier_new{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .sideToSide{
