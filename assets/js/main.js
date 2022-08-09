@@ -69,7 +69,7 @@ function scrollListener(){
         if(!s.done){
             s.element.classList.remove("hide_element");
             if(isElementVisible(s.element)){
-                s.element.classList.add("slide_in_" + s.side);
+                s.element.classList.add("animate");
                 slide_ins.splice(i, 1);
                 console.log(slide_ins.length);
             } else {
@@ -83,7 +83,7 @@ function scrollListener(){
 
 function isElementVisible(element) {
     const rect = element.getBoundingClientRect();
-    return rect.top + 50 <= screen.availHeight + 20;
+    return rect.bottom + ((rect.top - rect.bottom) / 3) <= screen.availHeight;
 }
 
 function myScrollTo(elementName) {

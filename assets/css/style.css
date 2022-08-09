@@ -484,26 +484,26 @@ header .bgCode.three{
 }
 
 .hide_element{
-    display: none;
+    opacity: 0.1;
 }
 
-.slide_in_left{
+.slide_in_left.animate{
     animation: 0.5s ease-out 0s 1 animation_slide_in_left;
 }
 
-.slide_in_right{
+.slide_in_right.animate{
     animation: 0.5s ease-out 0s 1 animation_slide_in_right;
 }
 
-.slide_in_bottom{
+.slide_in_bottom.animate{
     animation: 0.5s ease-out 0s 1 animation_slide_in_bottom;
 }
 
-.slide_in_top{
+.slide_in_top.animate{
     animation: 0.5s ease-out 0s 1 animation_slide_in_top;
 }
 
-.slide_in_scale{
+.slide_in_scale.animate{
     animation: 0.5s ease-out 0s 1 animation_slide_in_scale;
 }
 
