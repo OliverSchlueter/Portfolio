@@ -83,7 +83,7 @@ function scrollListener(){
 
 function isElementVisible(element) {
     const rect = element.getBoundingClientRect();
-    return rect.bottom + ((rect.top - rect.bottom) / 3) <= screen.availHeight;
+    return rect.bottom <= screen.availHeight - ((rect.top - rect.bottom) / 3);
 }
 
 function myScrollTo(elementName) {
