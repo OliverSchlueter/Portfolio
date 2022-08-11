@@ -485,6 +485,7 @@ header .bgCode.three{
 
 .hide_element{
     opacity: 0.1;
+    filter: blur(5px) brightness(50%);
 }
 
 .slide_in_left.animate{
