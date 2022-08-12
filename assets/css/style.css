@@ -2,6 +2,7 @@
 
 :root{
     --background-color: rgb(20, 20, 20);
+    --background-color2: rgb(14, 14, 14);
     --foreground-color: rgb(250, 250, 250);
     --light-orange: #ff6a00;
     --orange: #ad4829;
@@ -530,5 +531,5 @@ header .bgCode.three{
 
 @keyframes animation_slide_in_scale {
     from { transform: scale(0.5, 0.5); }
-    to { transform: translateY(1, 1); }
+    to { transform: scale(1, 1); }
 }

@@ -7,7 +7,8 @@
     if(isset($_POST['login'])){
         if($config->{"admin-password"} != hash("SHA512", $_POST['login'])){
             $_SESSION['admin'] = "";
-            die("Wrong password");
+            include "loginFailed.html";
+            die();
         } else {
             $_SESSION['admin'] = $_POST['login'];
             header("Location: ../");
@@ -30,9 +31,17 @@
     <style>
         main{
             position: absolute;
-            width: 100%;
+            width: 50%;
+            padding: 50px;
             top: 50%;
-            transform: translateY(-50%);
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            background-color: var(--background-color2);
+            border-radius: 10px;
+        }
+
+        form{
+            padding-top: 50px;
         }
     </style>
     <main>
