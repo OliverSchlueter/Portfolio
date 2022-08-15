@@ -15,8 +15,7 @@
             <ul class="nav">
                 <img class="logo" id="logo" src="../../assets/img/logo.png" alt="OS">
                 <li><a href="../../#projects">Portfolio</a></li>
-                <li><a onclick="myScrollTo('idea')">Idee</a></li>
-                <li><a onclick="myScrollTo('rest_api')">RESTful API</a></li>
+                <li><a onclick="myScrollTo('idea')">Beschreibung</a></li>
                 <li><a onclick="myScrollTo('screenshots')">Screenshots</a></li>
                 <li><a href="https://github.com/OliverSchlueter/TellTheWorld" target="_blank">GitHub</a></li>
             </ul>
@@ -25,7 +24,7 @@
             <div class="bottom-line"></div>
         </header>
 
-        <h1 id="idea">Die Idee</h1>
+        <h1 id="idea">Beschreibung</h1>
         <div class="sideToSide">
             <div class="leftSide slide_in_left">
                 <h2>Projektfindung</h2>
@@ -37,18 +36,16 @@
             </div>
         </div>
 
-        <hr>
-
-        <h1 id="rest_api">RESTful API</h1>
-        <p class="slide_in_left">Ungefär zur gleichen Zeit, wo ich das Projekt gestartet habe, habe ich auch RESTful entdeckt und wollte dies ebenfalls in diesen Projekt mit einbinden. Da ich ebenfalls mal etwas mit Python machen wollte, habe ich die RESTful API mit flask und flask_restful umgesetzt</p>
-        
-        <p class="slide_in_right">Den Code zum Python-Backend findest du hier: <a href="https://github.com/OliverSchlueter/TellTheWorld/tree/main/Code/Backend">Klick hier</a></p>
-        
-        <h2>API Benutzen</h2>
-        <p class="slide_in_left">Repo und notwendige Pakete herunterladen</p>
-        <p class="slide_in_right">Mit Python starten: <span class="inline_code">python3 ./Code/Backend/main.py</span></p>
-        <p class="slide_in_left">Informationen über einen User: <span class="inline_code">localhost:8080/api/v1/user/(user_tag)/</span></p>
-        <p class="slide_in_right">Informationen über eine Nachricht: <span class="inline_code">localhost:8080/api/v1/message/(message_id)/</span></p>
+        <div class="sideToSide">
+            <div class="leftSide slide_in_left">
+                <h2>Features</h2>
+                <p style="max-width: 90%; text-align: justify;">Das Hauptfeature ist, dass man Kurznachrichten veröffentlichen kann. Andere können diese Nachricht Liken, Kommentieren oder Reposten. Außerdem kann man andere Benutzer folgen, sodass man die neusten Nachrichten von der Person ebenfalls auf seiner Startseite erscheinen. Auch soll man die Möglichkeit haben andere Benutzer privat über einen Chat zu kontaktieren und sich darüber auszutauschen.</p>
+            </div>
+            <div class="rightSide slide_in_right">
+                <h2>RESTful API</h2>
+                <p style="max-width: 90%; text-align: justify;">Über eine RESTful API soll man die Möglichkeit haben, verschiedene Informationen und Statistiken über Benutzer, Nachrichten und der Plattform zu bekommen. Implementiert wird diese in Java mit Spring Boot.</p>
+            </div>
+        </div>
 
         <hr>
 
