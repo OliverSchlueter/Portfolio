@@ -23,6 +23,7 @@ div .point {
   border-radius: 6px;
   margin-bottom: 10px;
   text-align: left;
+  max-width: 500px;
   transition: all ease-in-out .2s;
 }
 
