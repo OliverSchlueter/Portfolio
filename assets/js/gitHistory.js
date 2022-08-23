@@ -13,7 +13,7 @@ const addCommit = (sha, date, description, author) => {
     headerElement.className = "date";
 
     const shaElement = document.createElement("a");
-    shaElement.href = "https://github.com/OliverSchlueter/Portfolio/commit/" + sha;
+    shaElement.href = "https://github.com/OliverSchlueter/" + repoName + "/commit/" + sha;
     shaElement.target = "_blank";
     shaElement.className = "courier_new";
     shaElement.style.color = "var(--light-orange)";
@@ -44,10 +44,15 @@ const addCommit = (sha, date, description, author) => {
 }
 
 const fetchCommits = async () => {
-    const response = await fetch('https://api.github.com/repos/OliverSchlueter/Portfolio/commits');
+    const response = await fetch(apiLink + '/commits');
     const json = await response.json();
+
+    if(!response.ok){
+        snackbar("Es ist etwas schiefgelaufen.<br>Versuche es später nochmal.")
+        return;
+    }
     
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 10; i++) {
         const sha = json[i].sha;
         const date = json[i].commit.author.date;
         const description = json[i].commit.message;

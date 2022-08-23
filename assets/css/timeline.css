@@ -27,10 +27,6 @@ div .point {
   transition: all ease-in-out .2s;
 }
 
-div .point:hover{
-  border-radius: 15px;
-}
-
 .point .date {
   font-size: 1.1em;
   font-weight: 700;

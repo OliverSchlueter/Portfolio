@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/timeline.css">
+    <link rel="stylesheet" href="../assets/css/snackbar.css">
 </head>
 <body>
     <?php
@@ -28,7 +29,7 @@
     ?>
     <main>
         <h1>Git History</h1>
-        <h2>Die letzten Commits von <span class="highlight_red"><?=$repoName ?></span></h2>
+        <h2>Die letzten Commits von <span class="highlight_red"><?= $repoName ?></span></h2>
 
         <div class="commits">
             <div class="timeline-container" id="commit-timeline"></div>
@@ -38,5 +39,6 @@
     
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/gitHistory.js"></script>
+    <script src="../assets/js/snackbar.js"></script>
 </body>
 </html>
