@@ -110,7 +110,7 @@ function toggleFaq(n) {
     }
 }
 
-function getRandomFromList (list) {
+function getRandomFromList(list) {
     return list[Math.floor((Math.random()*list.length))];
   }
 
@@ -118,4 +118,25 @@ const logoClickTexts = ["Hallo! Ich freue mich sehr, dass Du da bist :D", "Hey, 
 
 document.getElementById("logo").onclick = (e) => {
     snackbar(getRandomFromList(logoClickTexts));
+}
+
+
+function charJump(element){
+    element.classList.add("jump");
+
+    setTimeout(() => {
+        element.classList.remove("jump")
+    }, 410);
+}
+
+for (let i = 0; i < document.getElementsByClassName("jump_char").length; i++) {
+    const element = document.getElementsByClassName("jump_char")[i];
+
+    element.onmouseover = () => charJump(element);
+
+    if(element.classList.contains("load")){
+        setTimeout(() => {
+            charJump(element); 
+        }, 100 + 50*(i+1));
+    }
 }
