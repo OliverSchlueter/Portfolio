@@ -136,8 +136,23 @@ img{
     color: var(--foreground-color);
 }
 
+.highlight_light_orange{
+    color: var(--light-orange);
+}
+
+.highligh_orange{
+    color: var(--orange);
+}
+
 .mark_red{
     background-color: rgb(240, 84, 84);
+}
+
+.light_section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(40, 40, 40);
+    padding: 20px;
 }
 
 .courier_new{
@@ -150,6 +165,11 @@ img{
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.horizontal_layout{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .alignLeft{

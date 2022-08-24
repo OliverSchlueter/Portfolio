@@ -54,8 +54,10 @@ function scrollListener(){
     const scrollPos = window.scrollY;
     const headerHeight = document.getElementById("header").scrollHeight;
 
+    /*
+        Scroll up button
+    */
     const up_btn = document.getElementById("up-btn");
-
     if(scrollPos > headerHeight/2){
         up_btn.style.visibility = "visible";
     } else {
@@ -63,6 +65,9 @@ function scrollListener(){
     }
 
 
+    /*
+        Slide ins
+    */
     for (let i = 0; i < slide_ins.length; i++) {
         const s = slide_ins[i];
         
@@ -76,6 +81,28 @@ function scrollListener(){
                 s.element.classList.add("hide_element");
             }
             
+        }
+    }
+
+    /*
+        Rising numbers
+    */
+    for (let i = 0; i < document.getElementsByClassName("rising_number").length; i++) {
+        const element = document.getElementsByClassName("rising_number")[i];
+
+        if(!isElementVisible(element))
+            continue;
+
+        const n =  parseInt(element.getAttribute("rising_number"));
+
+        const increamentDelay = 1000 / n;
+
+        element.classList.remove("rising_number");
+    
+        for (let i = 0; i <= n; i++) {
+            setTimeout(() => {
+                element.textContent = i;
+            }, i*increamentDelay);
         }
     }
 }
