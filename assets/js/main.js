@@ -95,7 +95,7 @@ function scrollListener(){
 
         const n =  parseInt(element.getAttribute("rising_number"));
 
-        const increamentDelay = 1000 / n;
+        const increamentDelay = 2000 / n;
 
         element.classList.remove("rising_number");
     
