@@ -442,10 +442,10 @@ header .bgCode.three{
     border-radius: 10px;
     width: 400px;
     min-height: 150px;
-    height: max-content;
     margin: 15px;
     margin-top: 50px;
     padding: 10px 20px;
+    padding-bottom: 70px;
     transition: all ease-in-out .2s;
 }
 
@@ -469,6 +469,11 @@ header .bgCode.three{
     max-width: none;
 }
 
+.project .footer{
+    position: absolute;
+    bottom: 20px;
+}
+
 .project .name{
     margin: 0;
     color: var(--light-orange);
@@ -479,10 +484,6 @@ header .bgCode.three{
 
 .project .technology{
     font-family: 'Courier New', Courier, monospace;
-}
-
-.project .description{
-    padding-bottom: 10px;
 }
 
 .extra-info{
