@@ -76,7 +76,6 @@ function scrollListener(){
             if(isElementVisible(s.element)){
                 s.element.classList.add("animate");
                 slide_ins.splice(i, 1);
-                console.log(slide_ins.length);
             } else {
                 s.element.classList.add("hide_element");
             }
