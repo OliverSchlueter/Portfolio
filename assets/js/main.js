@@ -100,7 +100,13 @@ function scrollListener(){
     
         for (let i = 0; i <= n; i++) {
             setTimeout(() => {
-                element.textContent = i;
+                
+                if(element.id == "project_counter"){
+                    element.textContent = "> " + i;
+                } else {
+                    element.textContent = i;
+                }
+
             }, i*increamentDelay);
         }
     }

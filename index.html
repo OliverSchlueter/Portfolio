@@ -25,7 +25,7 @@
                 <li><a href="https://github.com/OliverSchlueter" target="_blank">GitHub</a></li>
             </ul>
             <h1 class="headline"><span class="jump_char load">O</span><span class="jump_char load">l</span><span class="jump_char load">i</span><span class="jump_char load">v</span><span class="jump_char load">e</span><span class="jump_char load">r</span> <span class="jump_char load">S</span><span class="jump_char load">c</span><span class="jump_char load">h</span><span class="jump_char load">l</span><span class="jump_char load">ü</span><span class="jump_char load">t</span><span class="jump_char load">e</span><span class="jump_char load">r</span></h1>
-            <h2 class="subtitle">Angehender Informationstechnischer Assistent</h2>
+            <h2 class="subtitle"><span onclick="snackbar('Sogar staatlich geprüft!')">Angehender Informationstechnischer Assistent</span></h2>
             <div class="bottom-line"></div>
         </header>
         
@@ -118,6 +118,11 @@
                     <h2 class="highlight_orange" style="margin-top: 0;">Code geschrieben</h2>
                 </div>
                 <div>
+                    <h1 id="project_counter" class="highlight_light_orange rising_number" style="margin-bottom: 0;" rising_number=8>0</h1>
+                    <h2 class="highlight_orange" style="margin-top: 0; margin-bottom: 0;">Coole Projekte</h2>
+                    <h2 class="highlight_orange" style="margin-top: 0;">geschaffen</h2>
+                </div>
+                <div>
                     <h1 id="contribution_counter" class="highlight_light_orange rising_number" style="margin-bottom: 0;" rising_number=505>0</h1>
                     <h2 class="highlight_orange" style="margin-top: 0; margin-bottom: 0;">GitHub Contributions</h2>
                     <h2 class="highlight_orange" style="margin-top: 0;">letztes Jahr</h2>
@@ -157,6 +162,7 @@
                     <div class="skill" style="--skill-percentage: 50%"><span onclick="snackbar('Unterschätze niemals HTML!<br> 1,88 Milliarden Websiten wurden damit erstellt.')">HTML</span> & CSS</div>
                     <div class="skill" style="--skill-percentage: 50%">PHP</div>
                     <div class="skill" style="--skill-percentage: 40%">JavaScript</div>
+                    <div class="skill" style="--skill-percentage: 37%">GoLang</div>
                     <div class="skill" style="--skill-percentage: 30%">Python</div>
                 </div>
             </div>
@@ -184,10 +190,20 @@
         </p>
         <div class="projects">
             <div class="project slide_in_scale">
+                <p class="name">Code Deck</p>
+                <p class="technology">GoLang, JavaScript, WebSockets</p>
+                <p class="description">Eine einfache Alternative zum Elgato Stream-Deck. Es wird eine Verbindung mit einen PC aufgebaut. Durch drücken von ein Button, öffnet sich das jeweilige Programm auf dem PC.</p>
+                <p class="footer">
+                    <a class="button_link" href="https://github.com/OliverSchlueter/CodeDeck" target="_blank">GitHub</a>
+                    <a class="button_link" href="git-history/?repo=CodeDeck">Git history</a>
+                </p>
+                <div class="project-bottom"></div>
+            </div>
+            <div class="project slide_in_scale">
                 <span class="extra-info">(Schulprojekt)</span>
                 <p class="name">Blockchain<br>Simulation</p>
                 <p class="technology">GoLang, C#, Hashing, asymmetrische Kryptographie</p>
-                <p class="description">Praktische Ergänzung zum Vortrag über asymmetrische Kryptosysteme. Außerdem mein erstes Projekt mit GoLang.</p>
+                <p class="description">Einfache umsetzung einer <span onclick="snackbar('DOGECOIN to the moon!')">Blockchain</span> in Go. Das Projekt dient als praktisches Beispiel für die Anwendung von moderner Kryptographie.</p>
                 <p class="footer">
                     <a class="button_link" href="https://github.com/OliverSchlueter/Blockchain" target="_blank">GitHub</a>
                     <a class="button_link" href="git-history/?repo=Blockchain">Git history</a>
