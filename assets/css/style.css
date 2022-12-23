@@ -265,6 +265,10 @@ header .bgCode.three{
     background: url("../img/code_3.png") left center;
 }
 
+header .bgCode.four{
+    background: url("../img/code_4.png") left center;
+}
+
 
 .headline{
     font-size: 8.5em;
