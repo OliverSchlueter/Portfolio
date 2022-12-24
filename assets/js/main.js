@@ -146,7 +146,13 @@ function getRandomFromList(list) {
     return list[Math.floor((Math.random()*list.length))];
   }
 
-const logoClickTexts = ["Hallo! Ich freue mich sehr, dass Du da bist :D", "Hey, wie war Dein Tag heute?", "Ich bin bloß ein Logo :/", "Hast Du schon meine eigene Programmiersprache, Java-- gesehen?"];
+const logoClickTexts = [
+    "Hallo! Ich freue mich sehr, dass Du da bist :D",
+    "Hey, wie war Dein Tag heute?",
+    "Ich bin bloß ein Logo :/",
+    "Stack++ > Java--",
+    "Ho ho ho"
+];
 
 document.getElementById("logo").onclick = (e) => {
     snackbar(getRandomFromList(logoClickTexts));
