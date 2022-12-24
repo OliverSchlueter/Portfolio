@@ -101,10 +101,10 @@ function scrollListener(){
         for (let i = 0; i <= n; i++) {
             setTimeout(() => {
                 
-                if(element.id == "project_counter"){
+                if(element.id === "project_counter"){
                     element.textContent = "> " + i;
                 } else {
-                    element.textContent = i;
+                    element.textContent = i.toString();
                 }
 
             }, i*increamentDelay);
@@ -121,7 +121,7 @@ function isElementVisible(element) {
 function myScrollTo(elementName) {
     slide_ins.forEach(s => s.element.classList.remove("hide_element"));
     document.getElementById(elementName).scrollIntoView({block: "start", behavior: "smooth"});
-    slide_ins.forEach(s => !s.done ? s.element.classList.add("hide_element") : none);
+    slide_ins.forEach(s => !s.done ? s.element.classList.add("hide_element") : null);
 }
 
 
@@ -131,9 +131,9 @@ function toggleFaq(n) {
     const toggleSymbol = question.children[0];
     const answer = parent.children[1];
     
-    var currentDisplay = answer.style.display;
+    const currentDisplay = answer.style.display;
 
-    if(currentDisplay != "block"){
+    if(currentDisplay !== "block"){
         answer.style.display = "block";
         toggleSymbol.innerHTML = "-";
     } else {

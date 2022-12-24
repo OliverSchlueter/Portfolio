@@ -12,7 +12,7 @@
     text-align: center;
     padding: 10px;
     /* border-bottom: 5px solid var(--orange); */
-    box-shadow: 0px 0px 5px 2px var(--yellow);
+    box-shadow: 0 0 5px 2px var(--yellow);
     animation: snackbar_fadein 0.5s, snackbar_fadeout 0.5s 2.5s;
 }
 
