@@ -150,7 +150,9 @@ const logoClickTexts = [
     "Hallo! Ich freue mich sehr, dass Du da bist :D",
     "Hey, wie war Dein Tag heute?",
     "Ich bin bloß ein Logo :/",
-    "Stack++ > Java--"
+    "Stack++ > Java--",
+    "Happy new year!",
+    "2023!"
 ];
 
 document.getElementById("logo").onclick = (e) => {
