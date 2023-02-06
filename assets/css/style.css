@@ -431,6 +431,7 @@ header .bgCode.four{
 /* My Projects */
 
 .projects{
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -449,9 +450,11 @@ header .bgCode.four{
     max-width: none;
 }
 
-.project .footer{
+.project-footer{
     position: absolute;
+    left: 15px;
     bottom: 0px;
+    max-width: none !important;
 }
 
 .project .name{
