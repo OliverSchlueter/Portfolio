@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/dialog.css">
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/snackbar.css">
+    <link rel="stylesheet" href="assets/css/card-effect.css">
     <script src="assets/js/risingNumbers.js"></script>
     <title>Oliver Schlüter</title>
 </head>
@@ -183,105 +184,134 @@
             Es sind viele Stunden in den jeweiligen Projekten eingeflossen.<br><br>
             Nicht alles ist perfekt! Wenn du Fehler, Verbesserungsvorschläge oder weitere Feature-Ideen hast - dann kannst du mir sie gerne zukommen lassen.
         </p>
-        <div class="projects">
-        <div class="project slide_in_scale">
-                <p class="name">Stack++</p>
-                <p class="technology">Java, Gradle</p>
-                <p class="description">Eine simple Programmiersprache. Der Code wird auf einer virtuellen Maschiene ausgeführt, welche einen Stack, mehrere Register und einen Hauptspeicher besitzt. Außerdem ist sie kompatibel mit meiner kleinen <a href="https://github.com/OliverSchlueter/GameEngine">game engine</a>. Mein <a href="https://github.com/OliverSchlueter/StackPP-Plugin">IntelliJ-Plugin</a> bietet sogar syntax highlighting und code completing an.</p>
-                <p class="footer">
-                <a class="button_link" href="https://github.com/OliverSchlueter/StackPP" target="_blank">GitHub</a>
-                <a class="button_link" href="git-history/?repo=StackPP">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+
+        <div class="cards projects">
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <p class="name">Stack++</p>
+                        <p class="technology">Java, Gradle</p>
+                        <p class="description">Eine simple Programmiersprache. Der Code wird auf einer virtuellen Maschiene ausgeführt, welche einen Stack, mehrere Register und einen Hauptspeicher besitzt. Außerdem ist sie kompatibel mit meiner kleinen <a href="https://github.com/OliverSchlueter/GameEngine">game engine</a>. Mein <a href="https://github.com/OliverSchlueter/StackPP-Plugin">IntelliJ-Plugin</a> bietet sogar syntax highlighting und code completing an.</p>
+                        <p class="footer">
+                            <a class="button_link" href="https://github.com/OliverSchlueter/StackPP" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=StackPP">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-                <p class="name">VSDB</p>
-                <p class="technology">GoLang, REST-API</p>
-                <p class="description">Eine Key-Value Datenbank, die mit einer REST-API gesteuert wird. Man kann die Datenbank als Cache "im RAM" benutzen oder die Daten auch Persistent speichern. Außerdem gibt es Libraries, für verschiedene Sprachen, welche den Zugriff erleichtern.</p>
-                <p class="footer">
-                <a class="button_link" href="https://github.com/OliverSchlueter/VSDB" target="_blank">GitHub</a>
-                <a class="button_link" href="git-history/?repo=VSDB">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <p class="name">VSDB</p>
+                        <p class="technology">GoLang, REST-API</p>
+                        <p class="description">Eine Key-Value Datenbank, die mit einer REST-API gesteuert wird. Man kann die Datenbank als Cache "im RAM" benutzen oder die Daten auch Persistent speichern. Außerdem gibt es Libraries, für verschiedene Sprachen, welche den Zugriff erleichtern.</p>
+                        <p class="footer">
+                            <a class="button_link" href="https://github.com/OliverSchlueter/VSDB" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=VSDB">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-                <p class="name">Second Brain</p>
-                <p class="technology">C#, WPF</p>
-                <p class="description">Ich finde die Idee von <u><a href="https://www.buildingasecondbrain.com/" target="_blank">Tiago Forte</a></u> sich ein "zweites (digitales) Gehirn" zu erstellen super, jedoch fand ich keine richtig passende Plattform dafür. Dies ist meine Implementation von einen Second Brain, wo man schnell alles möglich für die Ewigkeit abspeichern kann.</p>
-                <p class="footer">
-                <a class="button_link" href="https://github.com/OliverSchlueter/SecondBrain" target="_blank">GitHub</a>
-                <a class="button_link" href="git-history/?repo=SecondBrain">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <p class="name">Second Brain</p>
+                        <p class="technology">C#, WPF</p>
+                        <p class="description">Ich finde die Idee von <u><a href="https://www.buildingasecondbrain.com/" target="_blank">Tiago Forte</a></u> sich ein "zweites (digitales) Gehirn" zu erstellen super, jedoch fand ich keine richtig passende Plattform dafür. Dies ist meine Implementation von einen Second Brain, wo man schnell alles möglich für die Ewigkeit abspeichern kann.</p>
+                        <p class="footer">
+                            <a class="button_link" href="https://github.com/OliverSchlueter/SecondBrain" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=SecondBrain">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-                <p class="name">Code Deck</p>
-                <p class="technology">GoLang, JavaScript, WebSockets</p>
-                <p class="description">Eine einfache Alternative zum Elgato Stream-Deck. Es wird eine Verbindung mit einen PC aufgebaut. Durch drücken von ein Button, öffnet sich das jeweilige Programm auf dem PC.</p>
-                <p class="footer">
-                    <a class="button_link" href="https://github.com/OliverSchlueter/CodeDeck" target="_blank">GitHub</a>
-                    <a class="button_link" href="git-history/?repo=CodeDeck">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <p class="name">Code Deck</p>
+                        <p class="technology">GoLang, JavaScript, WebSockets</p>
+                        <p class="description">Eine einfache Alternative zum Elgato Stream-Deck. Es wird eine Verbindung mit einen PC aufgebaut. Durch drücken von ein Button, öffnet sich das jeweilige Programm auf dem PC.</p>
+                        <p class="footer">
+                            <a class="button_link" href="https://github.com/OliverSchlueter/CodeDeck" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=CodeDeck">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-                <span class="extra-info">(Schulprojekt)</span>
-                <p class="name">Callcenter<br>Simulation</p>
-                <p class="technology">C#, WebSockets, Windows Forms</p>
-                <p class="description">Eine Simulation eines Callcenters, wo Kunden sich in einen Kanal einwählen können und dann mit einen Mitarbeiter verbunden werden. Da es nur eine Simulation ist, wird ein Chat genutzt anstatt tatsächliche Audio.</p>
-                <p class="footer">
-                    <a class="button_link" href="https://github.com/OliverSchlueter/CallcenterSimulation" target="_blank">GitHub</a>
-                    <a class="button_link" href="git-history/?repo=CallcenterSimulation">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <span class="extra-info">(Schulprojekt)</span>
+                        <p class="name">Callcenter<br>Simulation</p>
+                        <p class="technology">C#, WebSockets, Windows Forms</p>
+                        <p class="description">Eine Simulation eines Callcenters, wo Kunden sich in einen Kanal einwählen können und dann mit einen Mitarbeiter verbunden werden. Da es nur eine Simulation ist, wird ein Chat genutzt anstatt tatsächliche Audio.</p>
+                        <p class="footer">
+                            <a class="button_link" href="https://github.com/OliverSchlueter/CallcenterSimulation" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=CallcenterSimulation">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-                <p class="name">Algorithms and Data&shy;structures</p>
-                <p class="technology">Java, Maven</p>
-                <p class="description">Implementierung von verschiedene bekannte Datenstrukturen und Algorithmen. Ziel ist es zu üben Datenstrukturen gezielter einzusetzen.</p>
-                <p class="footer">
-                    <a class="button_link" href="https://github.com/OliverSchlueter/AlgorithmsAndDataStructures" target="_blank">GitHub</a>
-                    <a class="button_link" href="git-history/?repo=AlgorithmsAndDataStructures">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <p class="name">Algorithms and Data&shy;structures</p>
+                        <p class="technology">Java, Maven</p>
+                        <p class="description">Implementierung von verschiedene bekannte Datenstrukturen und Algorithmen. Ziel ist es zu üben Datenstrukturen gezielter einzusetzen.</p>
+                        <p class="footer">
+                            <a class="button_link" href="https://github.com/OliverSchlueter/AlgorithmsAndDataStructures" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=AlgorithmsAndDataStructures">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-                <span class="extra-info">(im Aufbau)</span>
-                <p class="name">Tell The World</p>
-                <p class="technology">HTML, CSS, JavaScript, PHP, Java, Spring Boot, REST-API, MySQL</p>
-                <p class="description">Ein Full-Stack-Projekt, welches eine Plattform bietet, seine Gedanken, Geschichten oder Memes mit der Welt zu teilen.</p>
-                <p class="footer">
-                    <a href="projects/telltheworld/" class="button_link">Mehr &hellip;</a>
-                    <a class="button_link" href="https://github.com/OliverSchlueter/TellTheWorld" target="_blank">GitHub</a>
-                    <a class="button_link" href="git-history/?repo=TellTheWorld">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <span class="extra-info">(im Aufbau)</span>
+                        <p class="name">Tell The World</p>
+                        <p class="technology">HTML, CSS, JavaScript, PHP, Java, Spring Boot, REST-API, MySQL</p>
+                        <p class="description">Ein Full-Stack-Projekt, welches eine Plattform bietet, seine Gedanken, Geschichten oder Memes mit der Welt zu teilen.</p>
+                        <p class="footer">
+                            <a href="projects/telltheworld/" class="button_link">Mehr &hellip;</a>
+                            <a class="button_link" href="https://github.com/OliverSchlueter/TellTheWorld" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=TellTheWorld">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-                <p class="name">Portfolio Website</p>
-                <p class="technology">HTML, CSS, JavaScript, PHP</p>
-                <p class="description">Eine Website, welche mein Portfolio sein soll. Hier wird gezeigt, welche Erfahrungen ich schon habe. Es wurde mehr Wert auf Design gelegt, als sonst.</p>
-                <p class="footer">
-                    <a class="button_link" href="https://github.com/OliverSchlueter/Portfolio" target="_blank">GitHub</a>
-                    <a class="button_link" href="git-history/?repo=Portfolio">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <p class="name">Portfolio Website</p>
+                        <p class="technology">HTML, CSS, JavaScript, PHP</p>
+                        <p class="description">Eine Website, welche mein Portfolio sein soll. Hier wird gezeigt, welche Erfahrungen ich schon habe. Es wurde mehr Wert auf Design gelegt, als sonst.</p>
+                        <p class="footer">
+                            <a class="button_link" href="https://github.com/OliverSchlueter/Portfolio" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=Portfolio">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="project slide_in_scale">
-            <span class="extra-info">(DEPRECATED)</span>
-                <p class="name">Java--</p>
-                <p class="technology">Java, Maven</p>
-                <p class="description"><span class="highligh_orange">(Der Vorgänger von Stack++)<br><br></span>Das Bauen eines kleinen Compilers ist ein von mir privates Lernprojekt, um die Abläufe die ein Compiler durchläuft zu verstehen.</p>
-                <p class="footer">
-                    <a href="projects/compiler" class="button_link">Mehr &hellip;</a>
-                    <a class="button_link" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a>
-                    <a class="button_link" href="git-history/?repo=JavaMM">Git history</a>
-                </p>
-                <div class="project-bottom"></div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="project">
+                        <p class="name">Java--</p>
+                        <p class="technology">Java, Maven</p>
+                        <p class="description"><span class="highligh_orange">(Der Vorgänger von Stack++)<br><br></span>Das Bauen eines kleinen Compilers ist ein von mir privates Lernprojekt, um die Abläufe die ein Compiler durchläuft zu verstehen.</p>
+                        <p class="footer">
+                            <a href="projects/compiler" class="button_link">Mehr &hellip;</a>
+                            <a class="button_link" href="https://github.com/OliverSchlueter/JavaMM" target="_blank">GitHub</a>
+                            <a class="button_link" href="git-history/?repo=JavaMM">Git history</a>
+                        </p>
+                    </div>
+                </div>
             </div>
+            
         </div>
-        
-        <h3>Entdecke mehr Projekte von mir auf <a class="highlight_red" href="https://github.com/OliverSchlueter?tab=repositories" target="_blank">GitHub</a> ...</h3>
+
+
+        <h3 style="margin-top: 50px;">Entdecke mehr Projekte von mir auf <a class="highlight_red" href="https://github.com/OliverSchlueter?tab=repositories" target="_blank">GitHub</a> ...</h3>
 
         <hr>
 
@@ -318,6 +348,7 @@
         </footer>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dialogManager.js"></script>
-    <script src="assets/js/snackbar.js"></script>
+    <script src="assets/js/snackbard.js"></script>
+    <script src="assets/js/card-effect.js"></script>
 </body>
 </html>
