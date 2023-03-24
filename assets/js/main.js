@@ -64,6 +64,16 @@ function scrollListener(){
         up_btn.style.visibility = "hidden";
     }
 
+    /*
+        Floating nav
+    */
+    const floating_nav = document.getElementById("floating-nav");
+    if(scrollPos > headerHeight/1.5){
+        floating_nav.style.visibility = "visible";
+    } else {
+        floating_nav.style.visibility = "hidden";
+    }
+
 
     /*
         Slide ins
