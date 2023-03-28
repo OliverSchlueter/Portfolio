@@ -68,10 +68,12 @@ function scrollListener(){
         Floating nav
     */
     const floating_nav = document.getElementById("floating-nav");
-    if(scrollPos > headerHeight/1.5){
-        floating_nav.style.visibility = "visible";
-    } else {
-        floating_nav.style.visibility = "hidden";
+    if(floating_nav !== null){
+        if(scrollPos > headerHeight/1.5){
+            floating_nav.style.visibility = "visible";
+        } else {
+            floating_nav.style.visibility = "hidden";
+        }
     }
 
 
