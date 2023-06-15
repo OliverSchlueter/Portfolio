@@ -38,7 +38,7 @@
                 <li><a href="https://github.com/OliverSchlueter" target="_blank">GitHub</a></li>
             </ul>
             <h1 class="headline"><span class="jump_char load">O</span><span class="jump_char load">l</span><span class="jump_char load">i</span><span class="jump_char load">v</span><span class="jump_char load">e</span><span class="jump_char load">r</span> <span class="jump_char load">S</span><span class="jump_char load">c</span><span class="jump_char load">h</span><span class="jump_char load">l</span><span class="jump_char load">ü</span><span class="jump_char load">t</span><span class="jump_char load">e</span><span class="jump_char load">r</span></h1>
-            <h2 class="subtitle"><span onclick="snackbar('Sogar staatlich geprüft!')">Angehender Informationstechnischer Assistent</span></h2>
+            <h2 class="subtitle">Wirtschaftsinformatik & Anwendlungsentwicklung</h2>
             <div class="bottom-line"></div>
         </header>
         
@@ -52,19 +52,33 @@
                     <h2>Schulische Laufbahn</h2>
                     <div class="timeline-container">
                         <div class="point">
-                            <p class="date">2023 - 2027</p>
-                            <p class="txt">
+                            <p class="date">
                                 Duales Studium<br>
-                                Wirtschaftsinformatik
+                                <span class="highlight_gray">2023 - 2027</span>
+                            </p>
+                            <p class="txt">
+                                Wirtschaftsinformatik &<br>
+                                <span title="Fachinformatiker für Anwendlungsentwicklung">FI Anwendlungsentwicklung</span>
                             </p>
                         </div>
                         <div class="point">
-                            <p class="date">2020 - 2023</p>
-                            <p class="txt">Fachhochschulreife<br>Informationstechnischer Assistent</p>
+                            <p class="date">
+                                Fachhochschulreife<br>
+                                <span class="highlight_gray">2020 - 2023</span>
+                            </p>
+                            <p class="txt">
+                                Informationstechnischer Assistent<br>
+                                Notendurchschnitt: 2,0
+                            </p>
                         </div>
                         <div class="point">
-                            <p class="date">2014 - 2020</p>
-                            <p class="txt">Realschule</p>
+                            <p class="date">
+                                Realschule<br>
+                                <span class="highlight_gray">2014 - 2020</span>
+                            </p>
+                            <p class="txt">
+                                Notendurchschnitt: 2,84
+                            </p>
                         </div>
 
                     </div>
@@ -76,6 +90,10 @@
                     <tr>
                         <td>Name</td>
                         <td>Oliver Schlüter</td>
+                    </tr>
+                    <tr>
+                        <td>Geburtsjahr</td>
+                        <td>2003</td>
                     </tr>
                     <tr>
                         <td>E-Mail</td>
@@ -91,23 +109,16 @@
 
                 <div class="faq">
                     <div class="faq-item" id="faq-item-1">
-                        <p class="question" onclick="toggleFaq(1)"><span class="faqToggle">+</span>Warum ITA?</p>
-                        <p class="answer">Fast 50% der Stunden haben mit Informatik zu tun. Diese Stunden machen oft viel Spaß und bieten einen guten Ausgleich zu den "normalen" Fächern.</p>
+                        <p class="question" onclick="toggleFaq(1)"><span class="faqToggle">+</span>Wie lange programmierst du schon?</p>
+                        <p class="answer">Ich habe zum ersten Mal im Jahr 2016 mit Java programmiert und nur wenige Monate später auch mit HTML und CSS begonnen. Seitdem ich mein Fachabitur mache, programmiere ich fast täglich.</p>
                     </div>
                     <div class="faq-item" id="faq-item-2">
-                        <p class="question" onclick="toggleFaq(2)"><span class="faqToggle">+</span>Wie lange programmierst du schon?</p>
-                        <p class="answer">2016 habe ich als erstes Kontakt mit Java gehabt und nur wenige Monate danach mit HTML, CSS. Seitdem ich mein Fachabitur mache, bin ich fast täglich am programmieren.</p>
+                        <p class="question" onclick="toggleFaq(2)"><span class="faqToggle">+</span>Welches Betriebssystem benutzt du?</p>
+                        <p class="answer">Hauptsächlich nutze ich Windows 11, aber ich habe auch einige Erfahrungen mit Linux (Ubuntu) gesammelt.</p>
                     </div>
                     <div class="faq-item" id="faq-item-3">
-                        <p class="question" onclick="toggleFaq(3)"><span class="faqToggle">+</span>Welches Betriebssystem benutzt du?</p>
-                        <p class="answer">Hauptsächlich Windows 11, jedoch habe ich ebenfalls ein paar Erfahrungen mit Linux (Ubuntu) gesammelt.</p>
-                    </div>
-                    <div class="faq-item" id="faq-item-4">
-                        <p class="question" onclick="toggleFaq(4)"><span class="faqToggle">+</span>Welche Editoren benutzt du?</p>
-                        <p class="answer">
-                            Hauptsächlich Produkte von <a href="https://www.jetbrains.com" target="_blank" class="link">JetBrains</a> (Fleet, IntelliJ, Rider, PyCharm, GoLand).<br>
-                            Für Web-Programmierung verwende ich meistens <a href="https://code.visualstudio.com/" target="_blank" class="link">Visual Studio Code</a>
-                        </p>
+                        <p class="question" onclick="toggleFaq(3)"><span class="faqToggle">+</span>Welche Editoren benutzt du?</p>
+                        <p class="answer">In erster Linie verwende ich die Produkte von JetBrains (IntelliJ, Rider, PyCharm, GoLand, Fleet). Für die Web-Programmierung greife ich meistens auf Visual Studio Code zurück.</p>
                     </div>
                 </div>
             </div>
@@ -141,7 +152,7 @@
                 <button onclick="hideDialog('starting-story')" class="hideBtn">&#9747;</button>
                 <h2>Wie ich mit dem Programmieren angefangen bin</h2>
                 <p style="text-align: justify;">
-                    Schon 2016 habe ich angefangen programmieren zu lernen mit <span class="highlight_red">Java</span> und habe simple Minecraft/Spigot-Plugins entwickelt.
+                    Schon 2016 habe ich angefangen Programmieren zu lernen mit <span class="highlight_red">Java</span> und habe simple Minecraft/Spigot-Plugins entwickelt.
                     Es machte mir viel Spaß und ich lernte Woche für Woche dazu. 
                     Mit den Inspektor-Tool entdeckte ich, wie Websiten aufgebaut sind und probierte damit herrum, bis ich schließlich auch selber kleine Websiten mit <span class="highlight_red">HTML und CSS</span> erstellte.
                     Schnell entdeckte ich, dass ich nicht alle Daten in Textdatein speicher kann und began mich mit <span class="highlight_red">MySQL und SQLite</span> zu beschäftigen. 

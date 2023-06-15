@@ -192,6 +192,10 @@ img{
     color: var(--foreground-color);
 }
 
+.highlight_gray{
+    color: rgb(126, 126, 126);
+}
+
 .highlight_light_orange{
     color: var(--light-orange);
 }
@@ -387,8 +391,8 @@ header .bgCode.four{
     background-color: #ad4829;
     color: var(--foreground-color);
     text-decoration: none;
-    padding: 7px;
-    border-radius: 15%;
+    padding: 7px 15px;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 3px 10px;
     transition: all ease-in-out .2s;
     cursor: pointer; 
@@ -396,7 +400,7 @@ header .bgCode.four{
 
 .nav li a:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0 3px 10px;
-    color: var(--yellow);
+    color: var(--light-orange);
 }
 
 @media only screen and (max-width: 1000px) and (orientation: portrait) {
